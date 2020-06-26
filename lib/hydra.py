@@ -88,7 +88,7 @@ elif h == '12':
 	os.system("hydra -t 1 -V -f -l %s -P %s %s rdp" % (u, j, i))
 	time.sleep(5)
 elif h == 'back':
-	os.system("python pearl.py")
+	os.system("/data/data/com.termux/files/usr/bin/pearl")
 elif h == 'help':
 	print(""" This is an powerful bruteforcing tool called hydra.select any desired tool and bruteforce it using any wordlist (ex : example.txt).
 	""")
