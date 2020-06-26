@@ -22,7 +22,7 @@ echo "Updating to new version"
 
 sleep 2
 
-git clone https://github.com/ProfessorCipher/Blackpearl-framework.git
+git clone https://github.com/ProfessorCipher/Blackpearl-framework-.git
 
 clear
 
