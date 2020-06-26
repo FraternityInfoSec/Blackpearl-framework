@@ -1,0 +1,54 @@
+#!/bin/bash 
+b="\e[1;34m"
+
+r="\e[31;1m"
+
+w="\e[00m"
+
+cat << EOF
+
+EOF
+
+title=($r'Blackpearl Is Now Setting To Sail')
+
+spinner=($b'[-' $b'-]' $b'[-' $b'-]' )
+
+count(){
+
+  spin &
+
+  pid=$!
+
+  for i in `seq 1 10`
+
+  do
+
+    sleep 2;
+
+  done
+
+  kill $pid
+
+}
+
+spin(){
+
+  while [ 1 ]
+
+  do
+
+    for i in ${spinner[@]};
+
+    do
+
+      echo -ne "\r$i $title $i";
+
+      sleep 0.1;
+
+    done;
+
+  done
+
+}
+
+count
