@@ -3,7 +3,7 @@ import os,sys
 import time
 F = '\033[91m'
 G = '\033[92m'
-os.system("~/Blackpearl-framework;run")
+os.system("run")
 print(F + """
 
                                  P___----....
