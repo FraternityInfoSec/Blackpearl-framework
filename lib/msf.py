@@ -38,7 +38,7 @@ i = input(G + "msf~>")
 if i == '1':
 	print("Installing Metasploit Framework")
 	os.system("pkg install metasploit")
-    print("Metasploit Framework Installed")
+    	print("Metasploit Framework Installed")
 	os.system("cd ~/Blackpearl-framework/lib;python msf.py")
 elif i == '2':
 	os.system("")
