@@ -17,7 +17,7 @@ if i == '1':
 	os.system("cd /data/data/com.termux/files/home && git clone https://github.com/sqlmapproject/sqlmap.git")
 	print("Sqlmap Successfully Installed")
 elif i == '2':
-	os.system("cd os.system("cd ~/Blackpearl-framework/module;bash scan.sh")
+	os.system("cd ~/Blackpearl-framework/module;bash scan.sh")
 elif i == '3':
 	os.system("cd ~/Blackpearl-framework/module;bash db.sh")
 elif i == '4':
