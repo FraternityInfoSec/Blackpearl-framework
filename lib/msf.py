@@ -13,9 +13,6 @@ G = '\033[90m'
 B = '\033[90m'
 D = '\033[99m'
 print
-print("""
-1.nmap \n 2.msf
-""")
 print("1.Install Metasploit Framework")
 print("2.metasploit framework version")
 print("3.Windows --> test.exe (payload and listener) ")
@@ -38,10 +35,9 @@ i = input(G + "msf~>")
 if i == '1':
 	print("Installing Metasploit Framework")
 	os.system("pkg install metasploit")
-    	print("Metasploit Framework Installed")
 	os.system("cd ~/Blackpearl-framework/lib;python msf.py")
 elif i == '2':
-	os.system("")
+	os.system("5.0.0 / January 10, 2019")
 elif i == '3':
 	os.system("cd  ~/Blackpearl-framework/module;bash windows.sh")
 elif i == '4':
