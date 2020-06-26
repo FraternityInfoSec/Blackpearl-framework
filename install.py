@@ -2,7 +2,7 @@
 import os
 import time
 print
-os.system(chmod +x *")
+os.system("chmod +x *")
 os.system("cd ~/Blackpearl-framework-;./runinstall")
 os.system("cp -r pearl /data/data/com.termux/files/usr/bin")
 os.system("pip install tqdm")
