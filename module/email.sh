@@ -1,5 +1,5 @@
 
-#! /bin/bash 
+#!/bin/bash 
 
 r='\e[1;31m' 
 
