@@ -39,37 +39,42 @@ if i == '1':
 	print("Installing Metasploit Framework")
 	os.system("pkg install metasploit")
     print("Metasploit Framework Installed")
-	os.system("cd lib;python msf.py")
+	os.system("cd ~/Blackpearl-framework/lib;python msf.py")
 elif i == '2':
 	os.system("")
 elif i == '3':
-	os.system("cd module;bash windows.sh")
+	os.system("cd  ~/Blackpearl-framework/module;bash windows.sh")
 elif i == '4':
-	os.system("cd module;bash android.sh")
+	os.system("cd ~/Blackpearl-framework/module;bash android.sh")
 elif i == '5':
-	os.system("cd module;bash python.sh")
+	os.system("cd ~/Blackpearl-framework/module;bash python.sh")
 elif i == '6':
-	os.system("cd module;bash jar.sh")
+	os.system("cd ~/Blackpearl-framework/module;bash jar.sh")
 elif i == '7':
-	os.system("cd module;bash php.sh")
+	os.system("cd ~/Blackpearl-framework/module;bash php.sh")
 elif i == '8':
-	os.system("cd module;bash ms17.sh")
+	os.system("cd ~/Blackpearl-framework/module;bash ms17.sh")
 elif i == '9':
-	os.system("cd module;smb.bash ")
+	os.system("cd ~/Blackpearl-framework/module;smb.bash ")
 elif i == '10':
-	os.system("cd module;bash hta.sh")
+	os.system("cd ~/Blackpearl-framework/module;bash hta.sh")
 elif i == '11':
-	os.system("cd module;bash tp.sh")
+	os.system("cd ~/Blackpearl-framework/module;bash tp.sh")
 elif i == '12':
-	os.system("cd module;bash asp.sh")
+	os.system("cd ~/Blackpearl-framework/module;bash asp.sh")
 elif i == '13':
-	os.system("cd module;bash jsp.sh")
+	os.system("cd ~/Blackpearl-framework/module;bash jsp.sh")
 elif i == '14':
-	os.system("cd module;bash war.sh")
+	os.system("cd ~/Blackpearl-framework/module;bash war.sh")
 elif i == '15':
-	os.system("cd module;bash trojan.sh")
+	os.system("cd ~/Blackpearl-framework/module;bash trojan.sh")
 elif i == '16':
-	os.system("cd module;bash email.sh")
+	os.system("cd ~/Blackpearl-framework/module;bash email.sh")
 elif i == 'back':
 	os.system("cd ~/Blackpearl-framework;python pearl.py")
-																		
+else:
+        print("Invalid input")
+        print("Closing Metasploit Framework Automater console")
+        sys.exit(1)
+
+  
