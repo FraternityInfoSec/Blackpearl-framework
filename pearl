@@ -4,7 +4,6 @@ import time
 F = '\033[91m'
 G = '\033[92m'
 os.system("~/Blackpearl-framework-;run")
-time.sleep(8)
 os.system("clear")
 print(F + """
 
