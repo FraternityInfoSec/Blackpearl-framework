@@ -4,84 +4,21 @@
 
 clear
 
-green='\e[1;35m'
+green='\e[1;97m'
 
-cyan='\e[1;35m'
+cyan='\e[1;97m'
 
-red='\e[1;35m'
+red='\e[1;97m'
 
-blue='\e[1;35m'
+blue='\e[1;97m'
 
-white='\e[1;35m'
-
-yellow='\e[1;35m'
-
-echo
-
-echo -e $blue"Installing Requirements"
-
-sleep 1
-
-clear
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-pkg install nmap
-
-pkg install toilet
-
-pkg install git
-
-clear
-
-echo -e $green"Requirements Installed"
-sleep 1
-
-clear
-
-
-
-
-
-
-                                                       
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-echo
-
-toilet -f smblock --filter border:metal "NMAPPER" 
-
-
-
+white='\e[1;97m'
+yellow='\e[1;97m'
+figlet NMAPPER 
 echo
 
 echo
-
-toilet -f future "BY C-GROUP" | lolcat
+echo "From Fraternity"
 sleep 2
 
 
@@ -754,7 +691,7 @@ bash nmapper.sh
 fi
 echo 
 
-if [ $ipp = 0 ] 
+if [ $ipp = 'exit'] 
 
 then
 
@@ -766,9 +703,9 @@ echo
 
 echo
 
-exit
+pearl
 
 else
 
-bash nmapper.sh
+pearl
 
