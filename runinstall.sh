@@ -6,7 +6,7 @@ spinner=('Installing iNstalling inStalling insTalling instAlling instaLling inst
 count(){
   spin &
   pid=$!
-  for i in 'seq 1 10'                                                                   
+  for i in 'seq 1 20'                                                                   
   do  
       sleep 1;
   done
