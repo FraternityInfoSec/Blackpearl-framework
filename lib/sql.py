@@ -17,22 +17,22 @@ if i == '1':
 	os.system("cd /data/data/com.termux/files/home && git clone https://github.com/sqlmapproject/sqlmap.git")
 	print("Sqlmap Successfully Installed")
 elif i == '2':
-	os.system("cd module;bash scan.sh")
+	os.system("cd os.system("cd ~/Blackpearl-framework/module;bash scan.sh")
 elif i == '3':
-	os.system("cd module;bash db.sh")
+	os.system("cd ~/Blackpearl-framework/module;bash db.sh")
 elif i == '4':
-	os.system("cd module;bash table.sh")
+	os.system("cd ~/Blackpearl-framework/module;bash table.sh")
 elif i == '5':
-	os.system("cd module;bash column.sh")
+	os.system("cd ~/Blackpearl-framework/module;bash column.sh")
 elif i == '6':
-	os.system("cd module;bash dump.sh")
+	os.system("cd ~/Blackpearl-framework/module;bash dump.sh")
 elif i == '7':
-	os.system("cd module;bash waf.sh")
+	os.system("cd ~/Blackpearl-framework/module;bash waf.sh")
 elif i == 'help':
 	print("This is an sqmap automater .You can use this for testing your own websites. \n DISCLAIMER :This is for educational purpose only. we are not part of any illegal activities")
 elif i == 'back':
-	os.system("cd ~/Blackpearl-framework;bash pearl.sh")
+	os.system("pearl")
 else:
 	print("Invalid inputs")
 	print("Sqlmap Automater closing")
-	os.system("~/Blackpearl-framework;bash pearl.sh")
+	os.system("pearl")
