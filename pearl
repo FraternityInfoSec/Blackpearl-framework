@@ -55,7 +55,7 @@ elif i == 'sql':
 elif i == 'webjam':
 	print("Opening Ddos Automater Console")
 	time.sleep(2)
-	os.system("cd ~/Blackpearl-framework/module;python Ddos.py")
+	os.system("cd ~/Blackpearl-framework/module;python2 Ddos.py")
 elif i == 'nmap':
 	print("Opening Network Mapper Automater Console")
 	time.sleep(2)
