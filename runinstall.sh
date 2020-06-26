@@ -1,7 +1,7 @@
 r='\e[1;31m'
 cat << EOF
 EOF
-spinner=('Installing iNstalling inStalling insTalling instAlling inst>
+spinner=('Installing iNstalling inStalling insTalling instAlling instaLling instalLing installIng installiNg installinG Blackpearl bLackpearl blAckpearl blaCkpearl blacKpearl blackPearl blackpEarl blackpeArl blackpeaRl blackpearL')
 
 count(){
   spin &
