@@ -52,5 +52,3 @@ spin(){
 }
 
 count
-sleep 2
-clear
