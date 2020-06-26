@@ -3,7 +3,7 @@ import os,sys
 import time
 F = '\033[91m'
 G = '\033[92m'
-os.system("~/Blackpearl-framework-;run")
+os.system("~/Blackpearl-framework;run")
 os.system("clear")
 print(F + """
 
@@ -77,7 +77,6 @@ elif i == 'help':
 	print("""
 	TYPE BELOW COMMANDS IN CONSOLE : \n msf - To open metasploit automater console \n sql - To open sqlmap automater console \n ddos - To open webjam ddos automater console \n nmap - To open nmap automater comsole \n wl - To open wordlist maker automater console \n hydra - To open hydra bruteforce automater console \n about - To know about us \n update - To update Blackpearl Framework \n help - For help \n
 	""")
-	os.system("pearl")
 elif i == 'about':
 	os.system("cd ~/Blackpearl-framework/module;python about.py")
 elif i == 'exit':
