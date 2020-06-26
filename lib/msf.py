@@ -71,7 +71,7 @@ elif i == '15':
 elif i == '16':
 	os.system("cd ~/Blackpearl-framework/module;bash email.sh")
 elif i == 'back':
-	os.system("cd ~/Blackpearl-framework;python pearl.py")
+	os.system("pearl")
 else:
         print("Invalid input")
         print("Closing Metasploit Framework Automater console")
