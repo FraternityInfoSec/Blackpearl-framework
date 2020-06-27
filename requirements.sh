@@ -1,4 +1,6 @@
 clear
+echo "Press 'y' and enter if any permission asks for downloading resources"
+echo
 echo "Installing requirements"
 pkg install python
 pkg install git
