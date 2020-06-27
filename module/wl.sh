@@ -3,7 +3,7 @@ clear
 echo -e "\e[31m"
 echo "=========================================="
 echo -e "\e[92m"
-echo "FROM C-GROUP"
+echo -e "WORDLISTER"
 echo
 echo -e "\e[31m"
 echo "========================================="
