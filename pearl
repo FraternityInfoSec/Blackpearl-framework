@@ -3,13 +3,9 @@ import os,sys
 import time
 F = '\033[91m'
 G = '\033[92m'
-import time,sys,random
-def sprint(s):
-        for c in s +'\n':
-                sys.stdout.write(c)
-                sys.stdout.flush()
-                time.sleep(0.1  / 100)
 os.system("run")
+randomlogo()
+sprint(banner)
 ban = (F + """
 
                                  P___----....
