@@ -19,6 +19,17 @@ HOW TO INSTALL :
 
 Now Clear session and open new terminal and just type pearl and enter.
 
+# IMPORTANT COMMANDS
+
+Type below commands in Blackpearl-framework console :
+
+update : For any new updations 
+
+help   : For any help of using framework 
+
+exit   : To exit from console
+
+
 # FEATURES 
 
 YOU CAN USE THIS FOR :
@@ -43,7 +54,7 @@ Use can contact us for issues or problems on our email Cipherweb777@gmail.com
 
 WE ARE NOT RESPONSIBLE FOR ANY ILLEGAL ACTIVITIES BY THIS PROJECT. THIS FOR ONLY EDUCATIONAL PURPOSES AND CHECKING YOUR OWN WEBSITES AND OTHERS SECURITY. 
 
-FROM THE FRATERNITY BY CIPHER 
+<marquee bgcolor=brown behaviour=scroll scrolldelay=2> FROM THE FRATERNITY BY CIPHER </marquee>
 
 
 
