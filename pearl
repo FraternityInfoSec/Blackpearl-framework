@@ -1,6 +1,7 @@
 #!/bin/env python
 import os,sys
 import time
+import random
 F = '\033[91m'
 G = '\033[92m'
 os.system("run")
@@ -67,16 +68,9 @@ ban3 = """\x1b[36m
 ╚═╝╩═╝╩ ╩╚═╝╩ ╩╩  ╚═╝╩ ╩╩╚═╩═╝
 ╔═╗╦═╗╔═╗╔╦╗╔═╗╦ ╦╔═╗╦═╗╦╔═
 ╠╣ ╠╦╝╠═╣║║║║╣ ║║║║ ║╠╦╝╠╩╗
-╚  ╩╚═╩ ╩╩ ╩╚═╝╚╩╝╚═╝╩╚═╩ ╩"""
+╚  ╩╚═╩ ╩╩ ╩╚═╝╚╩╝╚═╝╩╚═╩ ╩
 
-def randomlogo():
-        listlogo = [ban1,ban2,ban3]
-        logo=(random.choice(listlogo))
-        sprint(logo)
-
-def logo():
-   (F + """
-
+ ban4 = """x1b[91m
                                  P___----....
                                 ! __
                       ' ~~ ---.#..__ `  ~  ~    -  -  .   .:
@@ -112,9 +106,13 @@ def logo():
 ╔═╗╦═╗╔═╗╔╦╗╔═╗╦ ╦╔═╗╦═╗╦╔═
 ╠╣ ╠╦╝╠═╣║║║║╣ ║║║║ ║╠╦╝╠╩╗
 ╚  ╩╚═╩ ╩╩ ╩╚═╝╚╩╝╚═╝╩╚═╩ ╩
-(*)MSF (*)NMAP (*)HYDRA (*)DDOS (*)WORDLISTER (*)SQLMAP
-""")
-logo()
+(*)MSF (*)NMAP (*)HYDRA (*)DDOS (*)WORDLISTER (*)SQLMAP"""
+def randomlogo():
+        listlogo = [ban1,ban2,ban3,ban4]
+        logo=(random.choice(listlogo))
+        sprint(logo)
+randomlogo()
+sprint(banner)
 i = input(G + "<pearl~>")
 if i == 'msf':
 	print("Opening Metasploit Framework Automater Console")
