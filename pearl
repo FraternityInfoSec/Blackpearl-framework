@@ -1,6 +1,7 @@
 #!/bin/env python
 import os,sys
 import time
+from logo import *
 F = '\033[91m'
 G = '\033[92m'
 os.system("run")
