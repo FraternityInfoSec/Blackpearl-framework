@@ -1,15 +1,11 @@
 #!/bin/bash 
 b="\e[1;34m"
 
-r="\e[31;1m"
-
-w="\e[00m"
-
 cat << EOF
 
 EOF
 
-title=($r'Blackpearl Is Now Setting To Sail')
+title=('Blackpearl Is Now Setting To Sail')
 
 spinner=($b'[-' $b'-]' $b'[-' $b'-]' )
 
