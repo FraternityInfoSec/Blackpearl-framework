@@ -129,7 +129,7 @@ elif i == 'webjam':
 elif i == 'nmap':
 	print("Opening Network Mapper Automater Console")
 	time.sleep(2)
-	os.system("cd lib;bash nmapper.sh")
+	os.system("cd ~/Blackpearl-framework/lib;bash nmapper.sh")
 elif i == 'wl':
 	print("Opening WordLister Automater Console")
 	time.sleep(2)
