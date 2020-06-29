@@ -15,7 +15,7 @@ count(){
 
   pid=$!
 
-  for i in `seq 1 12`
+  for i in `seq 1 8`
 
   do
 
