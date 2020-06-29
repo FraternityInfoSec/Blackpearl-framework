@@ -46,6 +46,8 @@ YOU CAN USE THIS FOR :
 
 6 POWERFUL AUTOMATED DISTRIBUTIED DENIAL OF SERVICE 
 
+And we had given 3 password list contains more than 10k passwords. 
+
 # CONTACT 
 
 Use can contact us for issues or problems on our email Cipherweb777@gmail.com 
