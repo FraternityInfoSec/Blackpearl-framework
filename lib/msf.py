@@ -36,8 +36,8 @@ if i == '1':
 	print("Installing Metasploit Framework")
 	os.system("pkg install metasploit")
 	os.system("cd ~/Blackpearl-framework/lib;python msf.py")
-elif i == '2':
-	os.system("5.0.0 / January 10, 2019")
+elif i == '2': 
+	print("5.0.0 / January 10, 2019") 
 elif i == '3':
 	os.system("cd  ~/Blackpearl-framework/module;bash windows.sh")
 elif i == '4':
