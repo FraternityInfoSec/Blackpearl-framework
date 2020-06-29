@@ -2,8 +2,8 @@
 
 THE BLACKPEARL-FRAMEWORK 
 
-</H1># 
-This is a framework for using most of best hacking tools to work without having an need of commands. 
+</H1>
+<H4 align="center">This is a framework for using most of best hacking tools to work without having an need of commands.</H4> 
 
 
 
@@ -60,7 +60,7 @@ Use can contact us for issues or problems on our email Cipherweb777@gmail.com
 
 WE ARE NOT RESPONSIBLE FOR ANY ILLEGAL ACTIVITIES BY THIS PROJECT. THIS FOR ONLY EDUCATIONAL PURPOSES AND CHECKING YOUR OWN WEBSITES AND OTHERS SECURITY. 
 
-<marquee bgcolor=brown behaviour=scroll scrolldelay=2> FROM THE FRATERNITY BY CIPHER </marquee>
+<H3 align="center"> FROM THE FRATERNITY BY CIPHER </H3>
 
 
 
