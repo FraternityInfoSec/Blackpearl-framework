@@ -1,6 +1,15 @@
 #!/bin/env python                                            import os,sys
-import time                                                     
+import time   
+import os
 print("""
+
+                                       
+ _____ _____ __    _____ _____ _____   
+|   __|     |  |  |     |  _  |  _  |  
+|__   |  |  |  |__| | | |     |   __|  
+|_____|__  _|_____|_|_|_|__|__|__|     
+         |__|                          
+
 """)
 print("1.Download Sqlmap")
 print("2.Scan a website to to find if it is vulnerable to sql")
