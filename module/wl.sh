@@ -10,7 +10,7 @@ echo "========================================="
 
 echo -e "\e[92m"
 
-OPTIONS="AUTOMATIC MANUAL EXIT"
+OPTIONS="AUTOMATIC MANUAL BACK"
 select opt in $OPTIONS; do
 
 if [ "$opt" = "AUTOMATIC" ]; then
@@ -170,9 +170,9 @@ sleep 1
 clear
 exit
 
-elif [ "$opt" = "EXIT" ]; then
+elif [ "$opt" = "BACK" ]; then
 echo -e "\e[92m"
-exit
+pearl 
 
 else
 echo -e "\e[31m"
