@@ -48,8 +48,8 @@ ban1 =  """\x1b[36m
 /_/ /_/|_/_/ |_/_/  /_/___/ |__/|__/\____/_/|_/_/|_|"""
 
 banner = """
-  \x1b[36m+~~~~~[\x1b[00m THE BLACKPEARL FRAMEWOKR \x1b[91m]~~~~~~\x1b[36m+
-  \x1b[36m+~~~~~[\x1b[00m MSF NMAP DDOS WORDLISTER HYDRA SQLMAP\x1b[91m]~~~~~~\x1b[36m+""" 
+  \x1b[36m+~~~~~[\x1b[00m THE BLACKPEARL FRAMEWOKR \x1b[36m]~~~~~~\x1b[36m+
+  \x1b[36m+~~~~~[\x1b[00m MSF NMAP DDOS WORDLISTER HYDRA SQLMAP\x1b[36m]~~~~~~\x1b[36m+""" 
 
 ban2 = """\x1b[91m
 ██████╗ ██████╗       ███████╗
@@ -71,6 +71,29 @@ ban3 = """\x1b[36m
 ╚  ╩╚═╩ ╩╩ ╩╚═╝╚╩╝╚═╝╩╚═╩ ╩"""
 
 ban4 = """x1b[91m
+ 
+ ____________________________________
+< Hack someone before you get hacked >
+ ------------------------------------
+      \                    / \  //\
+       \    |\___/|      /   \//  \\
+            /0  0  \__  /    //  | \ \
+           /     /  \/_/    //   |  \  \
+           @_^_@'/   \/_   //    |   \   \
+           //_^_/     \/_ //     |    \    \
+        ( //) |        \///      |     \     \
+      ( / /) _|_ /   )  //       |      \     _\
+    ( // /) '/,_ _ _/  ( ; -.    |    _ _\.-~        .-~~~^-.
+  (( / / )) ,-{        _      `-.|.-~-.           .~         `.
+ (( // / ))  '/\      /                 ~-. _ .-~      .-~^-.  \
+ (( /// ))      `.   {            }                   /      \  \
+  (( / ))     .----~-.\        \-'                 .~         \  `. \^-.
+             ///.----..>        \             _ -~             `.  ^-`  ^-_
+               ///-._ _ _ _ _ _ _}^ - - - - ~                     ~-- ,.-~
+                    BLACKPEARL-FRAMEWORK """                                          /.-~
+
+
+ban5 = """x1b[91m
                                  P___----....
                                 ! __
                       ' ~~ ---.#..__ `  ~  ~    -  -  .   .:
@@ -107,8 +130,36 @@ ban4 = """x1b[91m
 ╠╣ ╠╦╝╠═╣║║║║╣ ║║║║ ║╠╦╝╠╩╗
 ╚  ╩╚═╩ ╩╩ ╩╚═╝╚╩╝╚═╝╩╚═╩ ╩
 (*)MSF (*)NMAP (*)HYDRA (*)DDOS (*)WORDLISTER (*)SQLMAP"""
+
+ban6 = """\x1b[32m
+______________________________________
+< Hacking is an art and we are artists >
+ --------------------------------------
+          \
+           \
+            \          __---__
+                    _-       /--______
+               __--( /     \ )XXXXXXXXXXX\v.
+             .-XXX(   O   O  )XXXXXXXXXXXXXXX-
+            /XXX(       U     )        XXXXXXX\
+          /XXXXX(              )--_  XXXXXXXXXXX\
+         /XXXXX/ (      O     )   XXXXXX   \XXXXX\
+         XXXXX/   /            XXXXXX   \__ \XXXXX
+         XXXXXX__/          XXXXXX         \__---->
+ ---___  XXX__/          XXXXXX      \__         /
+   \-  --__/   ___/\  XXXXXX            /  ___--/=
+    \-\    ___/    XXXXXX              '--- XXXXXX
+       \-\/XXX\ XXXXXX                      /XXXXX
+         \XXXXXXXXX   \                    /XXXXX/
+          \XXXXXX      >                 _/XXXXX/
+            \XXXXX--__/              __-- XXXX/
+             -XXXXXXXX---------------  XXXXXX-
+                \XXXXXXXXXXXXXXXXXXXXXXXXXX/
+                  ""VXXXXXXXXXXXXXXXXXXV""
+		         BP-F V.1""" 
+			  
 def randomlogo():
-        listlogo = [ban1,ban2,ban3,ban4]
+        listlogo = [ban1,ban2,ban3,ban4,ban5]
         logo=(random.choice(listlogo))
         sprint(logo)
 randomlogo()
