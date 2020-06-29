@@ -1,14 +1,8 @@
 #!/bin/bash
 clear
-echo -e "\e[31m"
-echo "=========================================="
-echo -e "\e[92m"
-echo -e "WORDLISTER"
-echo
-echo -e "\e[31m"
-echo "========================================="
 
-echo -e "\e[92m"
+
+echo -e 
 
 OPTIONS="AUTOMATIC MANUAL BACK"
 select opt in $OPTIONS; do
