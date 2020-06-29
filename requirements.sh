@@ -3,6 +3,8 @@ echo "Press 'y' and enter if any permission asks for downloading resources"
 echo
 echo "Installing requirements"
 pkg install python
+pkg install hydra 
+pkg install nmap
 pkg install git
 pkg install python2
 pkg install toilet
