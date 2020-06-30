@@ -332,11 +332,13 @@ def main():
   	 	sql()
   	 else:
   	 	print("[!] Invalid Inputs")
+		sys.exit(1)
+		
 		
 		
 		
 	
-	mainmenu() 
+mainmenu() 
 		
 		
 		
