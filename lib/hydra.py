@@ -2,7 +2,7 @@
 import os
 import time
 import sys
-
+from pearl import *
 print
 print("1.Cisco Brute Force ")
 print("2.VNC Brute Force")
@@ -95,7 +95,8 @@ elif h == 'help':
 	""")
 	os.system("python hydra.py")
 else:
-	sys.exit(1)
+	main() 
+	
 	
 	
 
