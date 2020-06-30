@@ -2,6 +2,7 @@
 import os
 import sys
 import time
+from pearl import *
 R = '\033[91m'
 G = '\033[92m'
 B = '\033[94m'
@@ -67,7 +68,7 @@ elif i == '15':
 elif i == '16':
 	os.system("cd ~/Blackpearl-framework/module;bash email.sh")
 elif i == 'back':
-	os.system("pearl")
+	main()	
 else:
         print("Invalid input")
         print("Closing Metasploit Framework Automater console")
