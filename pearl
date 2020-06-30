@@ -334,5 +334,10 @@ def main():
   	 	print("[!] Invalid Inputs")
 		main() 
 		
+	
+	mainmenu() 
+		
+		
+		
   	 	
-mainmenu()
+
