@@ -2,7 +2,7 @@
 import os
 import time
 import sys
-from pearl import *
+import pearl
 print
 print("1.Cisco Brute Force ")
 print("2.VNC Brute Force")
