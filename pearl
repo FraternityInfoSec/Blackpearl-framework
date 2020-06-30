@@ -203,7 +203,7 @@ def randomlogo():
 randomlogo()
 sprint(banner)
 def main():
-  	 i = input("[pearl~>")
+  	 i = input(G + "[pearl~>")
   	 if i == 'msf':
   	 	print("Opening Metasploit Automater")
   	 	time.sleep(2)
