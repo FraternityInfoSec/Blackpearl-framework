@@ -296,9 +296,8 @@ def mainmenu():
 def main():
   	 i = input(G + "[pearl~>")
   	 if i == 'msf':
-  	 	print("Opening Metasploit Automater")
-  	 	time.sleep(2)
-  	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/lib;python msf.py")
+  	 	print("Opening Metasploit Framework Automater")
+		msf()		
   	 elif i == 'nmap':
   	 	print("Opening Network Mapper Automater")
   	 	time.sleep(2)
@@ -327,7 +326,7 @@ def main():
   	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/module;python update.py")
   	 elif i == 'sql':
   	 	print("Opening Sqlmap Automater")
-  	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/lib;python sql.py")
+  	 	sql()
   	 else:
   	 	print("[!] Invalid Inputs")
   	 	sys.exit(2)
