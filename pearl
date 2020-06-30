@@ -297,7 +297,7 @@ def main():
   	 i = input(G + "[pearl~>")
   	 if i == 'msf':
   	 	print("Opening Metasploit Framework Automater")
-		msf()		
+                msf()
   	 elif i == 'nmap':
   	 	print("Opening Network Mapper Automater")
   	 	time.sleep(2)
