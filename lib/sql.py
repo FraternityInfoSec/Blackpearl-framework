@@ -1,7 +1,7 @@
 #!/bin/env python                                            import os,sys
 import time   
 import os
-
+from pearl import *
 print("1.Download Sqlmap")
 print("2.Scan a website to to find if it is vulnerable to sql")
 print("3.Get Databases of website")
@@ -37,7 +37,7 @@ elif i == '7':
 elif i == 'help':
 	print("This is an sqmap automater .You can use this for testing your own websites. \n DISCLAIMER :This is for educational purpose only. we are not part of any illegal activities")
 elif i == 'back':
-	os.system("pearl")
+	main()
 else:
 	print("Invalid inputs")
 	print("Sqlmap Automater closing")
