@@ -14,13 +14,6 @@ blue='\e[1;97m'
 
 white='\e[1;97m'
 yellow='\e[1;97m'
-figlet NMAPPER 
-echo
-
-echo
-echo "From Fraternity"
-sleep 2
-
 
 echo -e $cyan"Note : Nmap takes time to load commands. It's speed depends your Internet speed. So be patience in running commands"
 
@@ -380,8 +373,7 @@ then
 
 echo -e $yellow"Light banner grabbing detection running"
 
-nmap -sV --version-intensity 0  $ip
-sleep 2
+nmap -sV --version-intensity 0  $i
 echo -e $blue
 read -p "press enter to go back" enter
 
@@ -398,7 +390,6 @@ then
 echo -e $yellow"Scanning using default safe scripts"
 
 nmap -sV -sC $ip
-sleep 2
 echo -e $blue
 read -p "press enter to go back" enter
 
@@ -416,7 +407,6 @@ echo -e $yellow"Getting help for a script"
 
 nmap --script-help=ssl-heartbleed 
 
-sleep 2
 
 echo -e $blue
 read -p "press enter to go back" enter
@@ -434,7 +424,6 @@ then
 echo -e $yellow"Scanning using a specific NSE script"
 
 nmap -sV -p 443 –script=ssl-heartbleed.nse $ip
-sleep 2
 echo -e $blue
 read -p "press enter to go back" enter
 
@@ -451,7 +440,6 @@ then
 echo -e $yellow"Scanning with a set of scripts"
 
 nmap -sV --script=smb* $ip
-sleep 2
 echo -e $blue
 read -p "press enter to go back" enter
 
@@ -487,7 +475,6 @@ then
 echo -e $yellow"Gathering page titles from HTTPS services"
 
 nmap --script=http-title $ip
-sleep 2
 echo -e $blue
 read -p "press enter to go back" enter
 
@@ -504,7 +491,6 @@ then
 echo -e $yellow"Getting HTTP headers of Web services"
 
 nmap --script=http-headers $ip/24
-sleep 2
 echo -e $blue
 read -p "press enter to go back" enter
 
@@ -521,7 +507,6 @@ then
 echo -e $yellow"Finding web apps from known paths"
 
 nmap  --script=http-enum $ip/24
-sleep 2
 echo -e $blue
 read -p "press enter to go back" enter
 
@@ -538,7 +523,6 @@ then
 echo -e $yellow"Testing Heatbleed"
 
 nmap -sV -p 443 --script=ssl-heartbleed $ip/24 
-sleep 2
 echo -e $blue
 read -p "press enter to go back" enter
 
@@ -555,7 +539,6 @@ then
 echo -e $yellow"Performing a RPC scan"
 
 nmap -sR $ip
-sleep 2
 echo -e $blue
 read -p "press enter to go back" enter
 
@@ -575,7 +558,6 @@ read -p $red "Enter the range for scanning" r
 echo -e $yellow"Scanning ip with given range"
 
 nmap $ip-$r
-sleep 2
 echo -e $blue"press enter to go back" enter
 
 bash nmapper.sh
@@ -591,7 +573,6 @@ then
 echo -e $yellow"checking firewall"
 
 nmap -PN $ip
-sleep 2
 echo -e $blue
 read -p "press enter to go back" enter
 
@@ -608,7 +589,6 @@ then
 echo -e $yellow"Gathering info of remote sys"
 
 nmap -v -A $ip
-sleep 2
 echo -e $blue
 read -p "press enter to go back" enter
 
@@ -625,7 +605,6 @@ then
 echo -e $yellow"showing reason"
 
 nmap --reason $ip
-sleep 2
 echo -e $blue
 read -p "press enter to go back" enter
 
@@ -643,8 +622,7 @@ read -p $cyan"enter port : $p "
 
 echo -e $yellow"Scanning specified port"
 
-  nmap -p $p $ip
-sleep 2
+nmap -p $p $ip
 echo -e $blue
 read -p "press enter to go back" enter
 
@@ -665,7 +643,7 @@ read -p $cyan"enter port 2 : $k "
 echo -e $yellow"Scanning specified ports"
 
 nmap -p $g,$k $ip
-sleep 2
+
 echo -e $blue
 read -p "press enter to go back" enter
 
@@ -682,7 +660,6 @@ then
 echo -e $yellow"Checking vuln"
 
 nmap --script dos -Pn $ip
-sleep 2
 echo -e $blue
 read -p "press enter to go back" enter
 
