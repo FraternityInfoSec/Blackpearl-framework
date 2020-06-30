@@ -200,6 +200,9 @@ def randomlogo():
         listlogo = [ban1,ban2,ban3,ban4,ban5,ban6]
         logo=(random.choice(listlogo))
         sprint(logo)
+
+		
+	 	  
 def msf():
 	print("1.Install Metasploit Framework")
 	print("2.Metasploit Framework version")
@@ -294,10 +297,10 @@ def mainmenu():
 	main()
 	
 def main():
-  	 i = input(G + "[pearl~>")
+  	 i = input("[pearl~>")
   	 if i == 'msf':
-  	 	print("Opening Metasploit Framework Automater")
-                msf()
+  	 	print("Opening Metasploit Automater")
+  	 	msf()
   	 elif i == 'nmap':
   	 	print("Opening Network Mapper Automater")
   	 	time.sleep(2)
