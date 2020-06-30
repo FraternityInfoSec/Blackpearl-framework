@@ -297,7 +297,7 @@ def mainmenu():
 	main()
 	
 def main():
-  	 i = input("[pearl~>")
+  	 i = input(G + "[pearl~>")
   	 if i == 'msf':
   	 	print("Opening Metasploit Automater")
   	 	msf()
