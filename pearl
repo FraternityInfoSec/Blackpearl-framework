@@ -161,11 +161,11 @@ ban5 = """x1b[91m
 (*)MSF (*)NMAP (*)HYDRA (*)DDOS (*)WORDLISTER (*)SQLMAP"""
 
 ban6 = """\x1b[32m
-______________________________________
+
                    < Hacking is an art and we are artists >
                                                                                 
    .@  /                                                                (  /@   
-    .. ,@@@@/               THE BLACKPEARL-FRAMEWORK                                   @@@@%# ..   
+    .. ,@@@@/               THE BLACKPEARL-FRAMEWORK                @@@@%# ..   
      * #* &@@@@@@                                               @@@@@%,.#  &    
        # @@@@*/@@@@@@                                      .@@@@@@.&@@@&.       
     ( &%.#,&@@@@  #@@@@@             FROM            ,@@@@@. (@@@&*#/*@ ..   
