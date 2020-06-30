@@ -2,6 +2,7 @@
 import os
 import time
 import sys
+from pearl import *
 print
 print("1.Cisco Brute Force ")
 print("2.VNC Brute Force")
@@ -88,7 +89,7 @@ elif h == '12':
 	os.system("hydra -t 1 -V -f -l %s -P %s %s rdp" % (u, j, i))
 	time.sleep(5)
 elif h == 'back':
-	os.system("/data/data/com.termux/files/usr/bin/pearl")
+	main()	
 elif h == 'help':
 	print(""" This is an powerful bruteforcing tool called hydra.select any desired tool and bruteforce it using any wordlist (ex : example.txt).
 	""")
