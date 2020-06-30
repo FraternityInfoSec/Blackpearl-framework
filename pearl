@@ -202,47 +202,39 @@ def randomlogo():
         sprint(logo)
 randomlogo()
 sprint(banner)
-i = input(G + "<pearl~>")
-if i == 'msf':
-	print("Opening Metasploit Framework Automater Console")
-	time.sleep(2)
-	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/lib;python msf.py")
-elif i == 'sql':
-	print("Opening Sqlmap Automater Console")
-	time.sleep(2)
-	os.system("cd ~/Blackpearl-framework/lib;python sql.py")
-elif i == 'webjam':
-	print("Opening Ddos Automater Console")
-	time.sleep(2)
-	os.system("cd ~/Blackpearl-framework/module;python2 Ddos.py")
-elif i == 'nmap':
-	print("Opening Network Mapper Automater Console")
-	time.sleep(2)
-	os.system("cd ~/Blackpearl-framework/lib;bash nmapper.sh")
-elif i == 'wl':
-	print("Opening WordLister Automater Console")
-	time.sleep(2)
-	os.system("cd ~/Blackpearl-framework/module;bash wl.sh")
-elif i == 'hydra':
-	print("Opening Hydra Automater Console")
-	time.sleep(2)
-	os.system("cd ~/Blackpearl-framework/lib;python hydra.py")
-elif i == 'update':
-	print("Checking For Updation....")
-	time.sleep(2)
-	os.system("cd ~/Blackpearl-framework/module;bash update.sh")
-elif i == 'help':
-	print("""
-	TYPE BELOW COMMANDS IN CONSOLE : \n msf - To open metasploit automater console \n sql - To open sqlmap automater console \n ddos - To open webjam ddos automater console \n nmap - To open nmap automater comsole \n wl - To open wordlist maker automater console \n hydra - To open hydra bruteforce automater console \n about - To know about us \n update - To update Blackpearl Framework \n help - For help \n
-	""")
-elif i == 'about':
-	os.system("cd ~/Blackpearl-framework/module;python about.py")
-elif i == 'exit':
-	sys.exit(1)
-else:
-	print("Invalid inputs")
-	print("Blackpearl-Framework console closing")
-	print("From Fraternity")
-	sys.exit(1)
-	
-
+def main():
+  	 i = input(G + "[pearl~>")
+  	 if i == 'msf':
+  	 	print("Opening Metasploit Automater")
+  	 	time.sleep(2)
+  	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/lib;python msf.py")
+  	 elif i == 'sql':
+  	 	print("Opening Network Mapper Automater")
+  	 	time.sleep(2)
+  	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/lib;bash nmapper.sh")
+  	 elif i == 'hydra':
+  	 	print("Opening Hydra Automater")
+  	 	time.sleep(2)
+  	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/lib;python hydra.py")
+  	 elif i == 'wl':
+  	 	print("Opening Wordlist Automater")
+  	 	time.sleep(2)
+  	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/module;bash wl.sh")
+  	 elif i == 'ddos':
+  	 	print("Opening DDOS Automater")
+  	 	time.sleep(2)
+  	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/lib;python Ddos.py")
+  	 elif i == 'help':
+  	 	print("Opening Metasploit Automater")
+  	 elif i == 'exit':
+ 	  	sys.exit(1)
+  	 elif i == 'about':
+  	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/module;python about.py")
+  	 elif i == 'clear':
+  	 	os.system("clear")
+  	 elif i == 'update':
+  	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/module;python update.py")
+  	 else:
+  	 	print("[!] Invalid Inputs")
+  	 	sys.exit(2)
+main()
