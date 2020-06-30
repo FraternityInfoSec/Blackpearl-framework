@@ -203,29 +203,33 @@ def randomlogo():
 randomlogo()
 sprint(banner)
 def main():
-  	 i = input(G + "[pearl~>")
-  	 if i == 'msf':
+     	 i = input(G + "[pearl~>")
+         if i == 'sql':
+        	print("Opening Sqlmap Automater")
+           	time.sleep(2)
+                os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/lib;python sql.py")
+         elif i == 'msf':
   	 	print("Opening Metasploit Automater")
   	 	time.sleep(2)
   	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/lib;python msf.py")
-  	 elif i == 'sql':
+  	 elif i == 'nmap':
   	 	print("Opening Network Mapper Automater")
   	 	time.sleep(2)
   	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/lib;bash nmapper.sh")
-  	 elif i == 'hydra':
+   	 elif i == 'hydra':
   	 	print("Opening Hydra Automater")
   	 	time.sleep(2)
   	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/lib;python hydra.py")
   	 elif i == 'wl':
   	 	print("Opening Wordlist Automater")
   	 	time.sleep(2)
-  	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/module;bash wl.sh")
-  	 elif i == 'ddos':
+  	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/module;bash wl.sh")	
+         elif i == 'ddos':
   	 	print("Opening DDOS Automater")
   	 	time.sleep(2)
   	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/lib;python Ddos.py")
   	 elif i == 'help':
-  	 	print("Opening Metasploit Automater")
+  	 	print("\n USE BELOW COMMANDS : \n msf - To open metasploit framework automater \n sql - To open sqlmap automater \n nmap - To open network mapper automater \n ddos - To open DDOS automater \n wl - To open custom wordlist maker \n hydra - To open hydra bruteforce automater \n exit - To exit from console \n back - To come back from a automater \n help - For help \n")
   	 elif i == 'exit':
  	  	sys.exit(1)
   	 elif i == 'about':
@@ -233,7 +237,7 @@ def main():
   	 elif i == 'clear':
   	 	os.system("clear")
   	 elif i == 'update':
-  	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/module;python update.py")
+  	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/module;python update.py"
   	 else:
   	 	print("[!] Invalid Inputs")
   	 	sys.exit(2)
