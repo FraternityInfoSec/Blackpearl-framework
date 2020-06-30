@@ -314,7 +314,7 @@ def main():
   	 elif i == 'ddos':
   	 	print("Opening DDOS Automater")
   	 	time.sleep(2)
-  	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/lib;python Ddos.py")
+  	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/module;python2 Ddos.py")
   	 elif i == 'help':
   	 	print("Opening Metasploit Automater")
   	 elif i == 'exit':
