@@ -1,7 +1,7 @@
-#!/bin/env python                                            import os,sys
+#!/bin/env python                                            
 import time   
-import os
-from pearl import main
+import os,sys
+from pearl import *
 print("1.Download Sqlmap")
 print("2.Scan a website to to find if it is vulnerable to sql")
 print("3.Get Databases of website")
