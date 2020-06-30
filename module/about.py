@@ -10,4 +10,5 @@ def delay_print(s):
 
 delay_print(G + "Hi all.This is just a project from the Fraternity. This for educational purposes only. We are not responsible for any illegal activities.For any issues or errors contact us on our email Cipherweb777@gmail.com @gmail.com") 
 print()
+time.sleep(3)
 main()
