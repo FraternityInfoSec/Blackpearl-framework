@@ -201,8 +201,6 @@ def randomlogo():
         logo=(random.choice(listlogo))
         sprint(logo)
 
-		
-	 	  
 def msf():
 	print("1.Install Metasploit Framework")
 	print("2.Metasploit Framework version")
@@ -297,7 +295,7 @@ def mainmenu():
 	main()
 	
 def main():
-  	 i = input(G + "[pearl~>")
+  	 i = input("[pearl~>")
   	 if i == 'msf':
   	 	print("Opening Metasploit Automater")
   	 	msf()
@@ -316,7 +314,7 @@ def main():
   	 elif i == 'ddos':
   	 	print("Opening DDOS Automater")
   	 	time.sleep(2)
-  	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/lib;python2 Ddos.py")
+  	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/lib;python Ddos.py")
   	 elif i == 'help':
   	 	print("Opening Metasploit Automater")
   	 elif i == 'exit':
@@ -332,14 +330,10 @@ def main():
   	 	sql()
   	 else:
   	 	print("[!] Invalid Inputs")
-		sys.exit(1)
-		
-		
-		
-		
-	
-mainmenu() 
-		
+  	 	sys.exit(2)
+mainmenu()		
+	 	  
+
 		
 		
   	 	
