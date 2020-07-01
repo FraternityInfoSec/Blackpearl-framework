@@ -405,6 +405,7 @@ def mainmenu():
 	sprint(banner)
 	main()
 	
+	
 def main():
   	 i = input("[pearl~>")
   	 if i == 'msf':
@@ -416,9 +417,7 @@ def main():
   	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/lib;bash nmapper.sh")
   	 elif i == 'hydra':
   	 	print("Opening Hydra Automater")
-		hydra() 
-  	 	time.sleep(2)
-  	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/lib;python hydra.py")
+  	 	hydra()
   	 elif i == 'wl':
   	 	print("Opening Wordlist Automater")
   	 	time.sleep(2)
@@ -443,10 +442,5 @@ def main():
   	 else:
   	 	print("[!] Invalid Inputs")
   	 	sys.exit(2)
-mainmenu()		
-	 	  
-
-		
-		
   	 	
-
+mainmenu()
