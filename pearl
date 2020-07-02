@@ -224,7 +224,7 @@ def msf():
 	elif i == '2':
 		print("5.0.0 / January 10, 2019")
 	elif i == '3':
-		os.system("cd  ~/Blackpearl-framework/module;python windows.py)
+		os.system("cd  ~/Blackpearl-framework/module;python windows.py")
 	elif i == '4':
 		os.system("cd  ~/Blackpearl-framework/module;python android.py")
 	elif i == '5':
