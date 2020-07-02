@@ -2,6 +2,7 @@
 import os,sys
 import time
 import random
+from urllib.request import urlopen
 F = '\033[91m'
 G = '\033[92m'
 os.system("run")
