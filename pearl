@@ -251,8 +251,152 @@ def msf():
 	    print("This for exploiting a system")
 	else:
 	    print("[!] Invalid input")
-	    sys.exit(1)
+	    main()
 
+def nmap():
+	print()
+	print("1.Scan a website to find open ports")
+	print("2.Scan for open port only")
+	print("3.Scan a subnet")
+	print("4.Scan a range of ports")
+	print("5.Scan 100 most common ports")
+	print("6.Scan all 65535 ports")
+	print("7.Scan using TCP connect")
+	print("8.Scan using TCP SYN")
+	print("9.Scan UFO ports")
+	print("10.Detect OS & Service")
+	print("11.Standard service detecting")
+	print("12.Detect more aggressive services")
+	print("13.Light Banner Grabbing Detection")
+	print("14.Scan using default safe scripts")
+	print("15.Scan using a specific NSE script")
+	print("16.Scan with a set of scripts")
+	print("17.Scan for DDOS reflectors")
+	print("18.Gather page titles from HTTP services")
+	print("19.HEARTBLEED testing")
+	print("20.Perform a RPC scan")
+	print("21.Scan IP with a given range")
+	print("22.Check firewall")
+	print("23.Scan a specified port")
+	print("24.Scan specified ports")
+	print("25.Check vulnerabiliity")
+	print()
+	i = input("[nmap> ")
+	if i == '1':
+		j = input("Enter Site/IP : ")
+		os.system("nmap" + j)
+		nmap()
+	elif i == '2':
+		j = input("Enter Site/IP : ")
+		os.system("nmap -open " + j)
+		nmap()
+	elif i == '3':
+		j = input("Enter Site/IP : ")
+		os.system("nmap" + j + '/24')
+		nmap()
+	elif i == '5':
+		j = input("Enter Site/IP : ")
+		os.system("nmap -F " + j)
+		nmap()
+	elif i == '4':
+		j = input("Enter Site/IP : ")
+		os.system("nmap -p 1-100" + j)
+		nmap()
+	elif i == '6':
+		j = input("Enter Site/IP : ")
+		os.system("nmap -p- " + j)
+		nmap()
+	elif i == '7':
+		j = input("Enter Site/IP : ")
+		os.system("nmap -sT " + j)
+		nmap()
+	elif i == '8':
+		j = input("Enter Site/IP : ")
+		os.system("nmap -sS " + j)
+		nmap()
+	elif i == '9':
+		j = input("Enter Site/IP : ")
+		os.system("nmap -sU -p 123,161,162 " + j)
+		nmap()
+	elif i == '10':
+		j = input("Enter Site/IP : ")
+		os.system("nmap -A " + j)
+		nmap()
+	elif i == '11':
+		j = input("Enter Site/IP : ")
+		os.system("nmap -sV " + j)
+		nmap()
+	elif i == '12':
+		j = input("Enter Site/IP : ")
+		os.system("nmap -sV " + j)
+		nmap()
+	elif i == '13':
+		j = input("Enter Site/IP : ")
+		os.system("nmap -sV --version-intensity 0 " + j)
+		nmap()
+	elif i == '14':
+		j = input("Enter Site/IP : ")
+		os.system("nmap -sV -sC " + j)
+		nmap()
+	elif i == '15':
+		j = input("Enter Site/IP : ")
+		os.system("nmap -sV -p 443 –script=ssl-heartbleed.nse " + j)
+		nmap()
+	elif i == '16':
+		j = input("Enter Site/IP : ")
+		os.system("nmap -sV --script=smb*  " + j)
+		nmap()
+	elif i == '17':
+		j = input("Enter Site/IP : ")
+		os.system("nmap –sU –A –PN –n –pU:19,53,123,161 –script=ntp-monlist,dns-recursion,snmp-sysdescr " + j + '/24')
+		nmap()
+	elif i == '18':
+		j = input("Enter Site/IP : ")
+		os.system("nmap --script=http-title " + j)
+		nmap()
+	elif i == '19':
+		j = input("Enter Site/IP : ")
+		os.system("nmap -sV -p 443 --script=ssl-heartbleed " + j +'/24')
+		nmap()
+	elif i == '20':
+		j = input("Enter Site/IP : ")
+		os.system("nmap -sR " + j)
+		nmap()
+	elif i == '21':
+		r = input("Enter range : ")
+		j = input("Enter Site/IP : ")
+		os.system("nmap " + j + '-' + r)
+		nmap()
+	elif i == '22':
+		j = input("Enter Site/IP : ")
+		os.system("nmap -PN " + j)
+		nmap()
+	elif i == '23':
+		p = input("Enter Port : ")
+		j = input("Enter Site/IP : ")
+		os.system("nmap -p " + j + p)
+		nmap()
+	elif i == '24':
+		p = input("Enter Port1 : ")
+		q = input("Enter Port2 : ")
+		j = input("Enter Site/IP : ")
+		os.system("nmap -p " + j + ',' + q + j)
+		nmap()
+	elif i == '25':
+		j = input("Enter Site/IP : ")
+		os.system("nmap --script dos -Pn " + j)
+		nmap()
+	elif i == 'back':
+		main()
+	elif i == 'help':
+		print(" \n This is an automater for port scanning ,vulnerability scanning,finding sys info ,etc. \n back - To go back to pearl console ")
+		nmap()
+	else:
+		print("[!] Invalid input")
+		print("[!] Try again")
+		nmap()
+
+			  
 def hydra():
      print("1.Dowload Hydra")
      print("2.Cisco bruteforce")
