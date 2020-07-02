@@ -521,29 +521,29 @@ def sql():
 	 if j == '1':
 	 	os.system("cd /data/data/com.termux/files/home && git clone https://github.com/sqlmapproject/sqlmap.git")
 	 	print("Sqlmap Successfully Installed")
+	 	sql()
 	 elif j == '2':
-	 	os.system("cd sqlmap")
-	 	os.system("cd ~/Blackpearl-framework/module;bash scan.sh")
+	 	os.system("cd ~/Blackpearl-framework/module;python scan.py")
+	 	sql()
 	 elif j == '3':
-	 	os.system("cd sqlmap")
-	 	os.system("cd ~/Blackpearl-framework/module;bash scan.sh")
+	 	os.system("cd ~/Blackpearl-framework/module;python db.py")
 	 elif j == '4':
-	 	os.system("cd sqlmap")
-	 	os.system("cd ~/Blackpearl-framework/module;db.sh")
+	 	os.system("cd ~/Blackpearl-framework/module;python table.py")
+	 	sql()
 	 elif j == '5':
-	 	os.system("cd sqlmap")
-	 	os.system("cd ~/Blackpearl-framework/module;bash table.sh")
+	 	os.system("cd ~/Blackpearl-framework/module;python column.py")
+	 	sql()
 	 elif j == '6':
-	 	os.system("cd sqlmap")
-	 	os.system("cd ~/Blackpearl-framework/module;bash column.sh")
+	 	os.system("cd ~/Blackpearl-framework/module;python dump.py")
+	 	sql()
 	 elif j == '7':
-	 	os.system("cd sqlmap")
-	 	os.system("cd ~/Blackpearl-framework/module;bash dump.sh")
-	 elif j == '8':
-	 	 os.system("cd sqlmap")
-	 	 os.system("cd ~/Blackpearl-framework/module;bash waf.sh")
+	 	os.system("cd ~/Blackpearl-framework/module;python waf.py")
+	 	sql()
+	 elif j == 'help':
+	 	 os.system("\n This is an automater for exploiting a website with sql vuln using sqlmap. \n back - To go back pearl console \n ")
+	 	 sql()
 	 elif j == 'back':
-	 	  sys.exit(2)
+	 	 main() 
 	
 def info():
 	print()
