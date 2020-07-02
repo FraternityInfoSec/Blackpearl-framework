@@ -209,11 +209,11 @@ def msf():
 	print("4.Android > payload.apk(Payload and listener)") 
 	print("5.Linux >  payload.py(payload and listener)")
 	print("6.MacOS > payload.jar(payload and listener)")
-	print ("7.Web > payload.php(payload and listener)")
+	print("7.Web > payload.php(payload and listener)")
 	print("8.Simple TCP shell for PHP")
 	print("9.Simple TCP shell for WAR")
 	print("10.Simple TCP shell for ASP")
-	print("11. Simple TCP shell for javascript")
+	print("11.Simple TCP shell for javascript")
 	print("12.Trojan or backdoor for windows xp/7")
 	print("13.Harvest email using metasploit framework")
 	i = input("[msf>")
@@ -224,27 +224,27 @@ def msf():
 	elif i == '2':
 		print("5.0.0 / January 10, 2019")
 	elif i == '3':
-		os.system("cd  ~/Blackpearl-framework/module;bash windows.sh")
+		os.system("cd  ~/Blackpearl-framework/module;python windows.py)
 	elif i == '4':
-		os.system("cd  ~/Blackpearl-framework/module;bash android.sh")
+		os.system("cd  ~/Blackpearl-framework/module;python android.py")
 	elif i == '5':
-		os.system("cd  ~/Blackpearl-framework/module;bash python.sh")
+		os.system("cd  ~/Blackpearl-framework/module;python python.py")
 	elif i == '6':
-		os.system("cd  ~/Blackpearl-framework/module;bash jar.sh")
+		os.system("cd  ~/Blackpearl-framework/module;python jar.py")
 	elif i == '7':
-		os.system("cd  ~/Blackpearl-framework/module;bash php.sh")
+		os.system("cd  ~/Blackpearl-framework/module;python  php.py")
 	elif i == '8':
-		os.system("cd  ~/Blackpearl-framework/module;bash tp.sh")
+		os.system("cd  ~/Blackpearl-framework/module;python tp.py")
 	elif i == '9':
-		os.system("cd  ~/Blackpearl-framework/module;bash war.sh")
+		os.system("cd  ~/Blackpearl-framework/module;python war.py")
 	elif i == '10':
-		os.system("cd  ~/Blackpearl-framework/module;bash asp.sh")
+		os.system("cd  ~/Blackpearl-framework/module;python sp.py")
 	elif i == '11':
-		os.system("cd  ~/Blackpearl-framework/module;bash jsp.sh")
+		os.system("cd  ~/Blackpearl-framework/module;python jsp.py")
 	elif i == '12':
-		os.system("cd  ~/Blackpearl-framework/module;bash trojan.sh")
+		os.system("cd  ~/Blackpearl-framework/module;python trojan.py")
 	elif i == '13':
-		os.system("cd  ~/Blackpearl-framework/module;bash email.sh")
+		os.system("cd  ~/Blackpearl-framework/module;python email.py")
 	elif i == 'back':
 		main()
 	elif i == 'help':
