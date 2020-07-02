@@ -49,7 +49,7 @@ ban1 =  """\x1b[36m
 
 banner = """
   \x1b[36m+~~~~~[\x1b[00m THE BLACKPEARL FRAMEWOKR \x1b[36m]~~~~~~\x1b[36m+
-  \x1b[36m+~~~~~[\x1b[00m MSF NMAP DDOS WORDLISTER HYDRA SQLMAP\x1b[36m]~~~~~~\x1b[36m+""" 
+  \x1b[36m+~~~~~[\x1b[00m MSF NMAP DDOS WORDLISTER HYDRA SQLMAP INFO\x1b[36m]~~~~~~\x1b[36m+""" 
 
 ban2 = """\x1b[91m
 ██████╗ ██████╗       ███████╗
@@ -158,7 +158,7 @@ ban5 = """x1b[91m
 ╔═╗╦═╗╔═╗╔╦╗╔═╗╦ ╦╔═╗╦═╗╦╔═
 ╠╣ ╠╦╝╠═╣║║║║╣ ║║║║ ║╠╦╝╠╩╗
 ╚  ╩╚═╩ ╩╩ ╩╚═╝╚╩╝╚═╝╩╚═╩ ╩
-(*)MSF (*)NMAP (*)HYDRA (*)DDOS (*)WORDLISTER (*)SQLMAP"""
+(*)MSF (*)NMAP (*)HYDRA (*)DDOS (*)WORDLISTER (*)SQLMAP (*) INFO"""
 
 ban6 = """\x1b[32m
 
@@ -399,7 +399,62 @@ def sql():
 	 	 os.system("cd ~/Blackpearl-framework/module;bash waf.sh")
 	 elif j == 'back':
 	 	  sys.exit(2)
-	 	  
+	
+def info():
+	print()
+	print("1.Geo Ip lookup")
+	print("2.Host finder")
+	print("3.HTTP finder")
+	print("4.Host DNS finder")
+	print("5.Reverse IP looker")
+	print("6.Traceroute")
+	i = input("[info~> ")
+	if i == '1':
+		d = input('Enter IP Address : ')
+		g = "http://api.hackertarget.com/geoip/?q=" + d
+		ip = urlopen(g).read()
+		print(ip)
+		info()
+	elif i == '2':
+		d = input('Enter Domain : ')
+		h = "http://api.hackertarget.com/hostsearch/?q=" + d
+		f = urlopen(h).read()
+		print(f)
+		info()
+	elif i == '3':
+		d = input("Enter Domain : ")
+		h = "http://api.hackertarget.com/httpheaders/?q=" + d
+		der =  urlopen(h).read()
+		print(der)
+		info()
+	elif i == '4':
+		d = input("Enter Domain : ")
+		get = "https://api.hackertarget.com/mtr/?q=" + d
+		page = urlopen(get).read()
+		print(page)
+		info()
+	elif i == '5':
+	     d = input("Enter IP : ")
+	     reverse = "http://api.hackertarget.com/reverseiplookup/?q=" + d
+	     lookup = url.open(reverse).read()
+	     print(lookup)
+	     info()
+	elif i == '6':
+	     d = input("Enter Domain : ")
+	     host = "http://api.hackertarget.com/findshareddns/?q=" + d
+	     dns = urlopen(host).read()
+	     print(dns)
+	     info()
+	elif i == 'back':
+	    main()
+	elif i == 'exit':
+	    sys.exit(1)
+	elif i == 'help':
+	    print("\n Select corresponding number to given option here. use command back to go back to pearl console. \n This is for information gathering. \n exit - To exit from console \n")
+	else:
+		print("[!] Invalid input")
+		print("Try again")
+		info()			
 def mainmenu():
 	randomlogo()
 	sprint(banner)
