@@ -525,6 +525,7 @@ def sql():
 	 	print("Sqlmap Successfully Installed")
 	 	sql()
 	 elif j == '2':
+		os.system("cd ~/sqlmap")
 	 	w = input("Enter Website : ")
 	 	os.system("python sqlmap.py -u" + w + '%27')
 	 	sql()
