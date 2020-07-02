@@ -613,7 +613,7 @@ def main():
   	 elif i == 'nmap':
   	 	print("Opening Network Mapper Automater")
   	 	time.sleep(2)
-  	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/lib;bash nmapper.sh")
+  	 	nmap()
   	 elif i == 'hydra':
   	 	print("Opening Hydra Automater")
   	 	hydra()
