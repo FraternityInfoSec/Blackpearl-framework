@@ -357,7 +357,7 @@ def nmap():
 	print("24.Scan specified ports")
 	print("25.Check vulnerabiliity")
 	print()
-	i = input("[nmap> ")
+	i = input("[pearl(nmap)> ")
 	if i == '1':
 		j = input("Enter Site/IP : ")
 		os.system("nmap" + j)
@@ -487,7 +487,7 @@ def hydra():
      print("11.MySql bruteforce")
      print("12.Teamspeak bruteforce")
      print()
-     i = input("[Hydra~>")
+     i = input("[pearl(Hydra)> ")
      if i == 'hydra':
      	os.system("clear")
      	print("Installing Hydra")
@@ -595,7 +595,7 @@ def sql():
 	 print("6.Get data from  table")
 	 print("7.WAF bypass")
 	 print()
-	 j = input("[sql>")
+	 j = input("[pearl(sql)> ")
 	 if j == '1':
 	 	os.system("cd /data/data/com.termux/files/home && git clone https://github.com/sqlmapproject/sqlmap.git")
 	 	print("Sqlmap Successfully Installed")
@@ -658,7 +658,7 @@ def info():
 	print("4.Host DNS finder")
 	print("5.Reverse IP looker")
 	print("6.Traceroute")
-	i = input("[info~> ")
+	i = input("[pearl(info)> ")
 	if i == '1':
 		d = input('Enter IP Address : ')
 		g = "http://api.hackertarget.com/geoip/?q=" + d
@@ -731,7 +731,7 @@ def main():
   	 	time.sleep(2)
   	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/module;python2 Ddos.py")
   	 elif i == 'help':
-  	 	print("Opening Metasploit Automater")
+  	 	print("This is an automater for various main exploiting frameworks and scanning frameworks. \n Use : \n msf - To open metasploit framework automater \n hydra - To open hydra bruteforce automater \n sql - To open sqlmap website penetration automater \n ddos - To open powerful DDOS automater \n info - To open information gathering automater \n nmap - To open network mapper automater \n wl - To open custom wordlist maker \n exit - To exit from pearl console \n update - To update this this framework \n about - To know more about us \n")
   	 elif i == 'exit':
  	  	sys.exit(1)
   	 elif i == 'about':
