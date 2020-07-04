@@ -327,8 +327,8 @@ def msf():
 	elif j == 'back':
 		main()
 	else:
-		print("[!] Invalid input")
-		print("[!] Try again")
+		print(r + '[!]' + w + 'Invalid Input')
+		print(r + '[!]' + w + 'Try Again')
 		msf()
 
 def nmap():
@@ -470,8 +470,8 @@ def nmap():
 		print(" \n This is an automater for port scanning ,vulnerability scanning,finding sys info ,etc. \n back - To go back to pearl console ")
 		nmap()
 	else:
-		print("[!] Invalid input")
-		print("[!] Try again")
+		print(r + '[!]' + w + 'Invalid Input')
+		print(r + '[!]' + w + 'Try Again')
 		nmap()
 
 			  
@@ -583,8 +583,8 @@ def hydra():
      elif i == 'back':
      	main()
      else:
-     	print("[!] Invalid input")
-     	print("[!] Try again")
+     	print(r + '[!]' + w + 'Invalid Input')
+     	print(r + '[!]' + w + 'Try Again')
      	print()
      	hydra()     	
      	
@@ -649,8 +649,8 @@ def sql():
 	 elif j == 'help':
 	 			print("\n This is an automater for performing sql injection to a websiteb usig sqlmap. \n back - To go back to pearl console \n ")
 	 else:
-	 	print("[!] Invalid input")
-	 	print("[!] Try again")
+	 	print(r + '[!]' + w + 'Invalid Input')
+	 	print(r + '[!]' + w + 'Try Again')
 	 	sql() 
 
 	 	 
@@ -707,8 +707,8 @@ def info():
 	elif i == 'help':
 	    print("\n Select corresponding number to given option here. use command back to go back to pearl console. \n This is for information gathering. \n exit - To exit from console \n")
 	else:
-		print("[!] Invalid input")
-		print("Try again")
+		print(r + '[!]' + w + 'Invalid Input')
+		print(r + '[!]' + w + 'Try Again')
 		info()			
 def mainmenu():
 	randomlogo()
@@ -716,7 +716,7 @@ def mainmenu():
 	main()
 	
 def main():
-  	 i = input("[pearl~> ")
+  	 i = input(w + "[pearl~> ")
   	 if i == 'msf':
   	 	print("Opening Metasploit Automater")
   	 	msf()
@@ -751,7 +751,7 @@ def main():
   	 elif i == 'info':
   	 	info()
   	 else:
-  	 	print("[!] Invalid Inputs")
+  	 	print(r + '[!]' + w + 'Invalid Input')
   	 	sys.exit(2)
   	 	
 mainmenu()	
