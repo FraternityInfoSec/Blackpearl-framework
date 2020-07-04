@@ -3,8 +3,8 @@ import os,sys
 import time
 import random
 from urllib.request import urlopen
-w='\x1b[00m'
-r='\x1b[91m'
+w= '\x1b[00m'
+r= '\x1b[91m'
 F = '\033[91m'
 G = '\033[92m'
 os.system("run")
@@ -218,7 +218,7 @@ def msf():
 	print("10.Simple TCP shell for javascript")
 	print("11.Trojan or backdoor for windows xp/7")
 	print()
-	j = input(w+'pearl('+r+'msf'+w+') > ')
+	j = input(w + 'pearl(' + r + 'msf' + w + ') > ')
 	if j == '1':
 		os.system("pkg install unstable-repo")
 		os.system("pkg install metasploit")
@@ -359,7 +359,7 @@ def nmap():
 	print("24.Scan specified ports")
 	print("25.Check vulnerabiliity")
 	print()
-	i = input(w+'pearl('+r+'nmap'+w+') > ')
+	i = input(w + 'pearl(' + r + 'nmap' + w + ') > ')
 	if i == '1':
 		j = input("Enter Site/IP : ")
 		os.system("nmap" + j)
@@ -491,7 +491,7 @@ def hydra():
      print("12.Teamspeak bruteforce")
      print("13.VNC bruteforce")
      print()
-     i = input(w+'pearl('+r+'hydra'+w+') > ')
+     i = input(w + 'pearl(' + r + 'hydra' + w + ') > ')
      if i == '1':
      	os.system("clear")
      	print("Installing Hydra")
@@ -600,7 +600,7 @@ def sql():
 	 print("6.Get data from  table")
 	 print("7.WAF bypass")
 	 print()
-	 j = input(w+'pearl('+r+'sqlmap'+w+') > ')
+	 j = input(w + 'pearl(' + r +'sqlmap' + w + ') > ')
 	 if j == '1':
 	 	os.system("cd /data/data/com.termux/files/home && git clone https://github.com/sqlmapproject/sqlmap.git")
 	 	print("Sqlmap Successfully Installed")
@@ -663,7 +663,7 @@ def info():
 	print("4.Host DNS finder")
 	print("5.Reverse IP looker")
 	print("6.Traceroute")
-	i = input(w+'pearl('+r+'info'+w+') > ')
+	i = input(w + 'pearl(' + r + 'info' + w + ') > ')
 	if i == '1':
 		d = input('Enter IP Address : ')
 		g = "http://api.hackertarget.com/geoip/?q=" + d
@@ -716,7 +716,7 @@ def mainmenu():
 	main()
 	
 def main():
-  	 i = input("[pearl~>")
+  	 i = input("[pearl~> ")
   	 if i == 'msf':
   	 	print("Opening Metasploit Automater")
   	 	msf()
