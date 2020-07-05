@@ -56,9 +56,9 @@ ban1 = """\x1b[36m
 /_/ /_/|_/_/ |_/_/  /_/___/ |__/|__/\____/_/|_/_/|_|"""
 
 banner = """
-  \x1b[36m+~~~~~[\x1b[00m THE BLACKPEARL FRAMEWORK \x1b[36m]~~~~~~\x1b[36m+
+  \x1b[36m+~~~~~[\x1b[00m THE BLACKPEARL FRAMEWORK\x1b[36m]~~~~~~\x1b[36m+
   \x1b[36m+~~~~~[\x1b[00m MSF NMAP DDOS WORDLISTER HYDRA SQLMAP INFO\x1b[36m]~~~~~~\x1b[36m+
-  \x1b[36m+~~~~~[\x1b[00m Use help command for using BP-F \x1b[36]~~~~~~\x1b[36m+""" 
+  \x1b[36m+~~~~~[\x1b[00m Use help command for using BP-F\x1b[36m]~~~~~~\x1b[36m+""" 
 
 ban2 = """\x1b[91m
 ██████╗ ██████╗       ███████╗
