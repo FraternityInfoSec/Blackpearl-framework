@@ -752,6 +752,6 @@ def main():
   	 	info()
   	 else:
   	 	print(r + '[!]' + w + 'Invalid Input')
-  	 	sys.exit(2)
+  	 	main()
   	 	
-mainmenu() 
+mainmenu()
