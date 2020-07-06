@@ -467,6 +467,8 @@ def hydra():
      print("12.Teamspeak bruteforce")
      print("13.VNC bruteforce")
      print()
+     global r
+     global w
      i = input(w + 'pearl(' + r + 'hydra' + w + ') > ')
      if i == '1':
      	os.system("clear")
@@ -562,7 +564,7 @@ def hydra():
      	print(r + '[!]' + w + 'Invalid Input')
      	print(r + '[!]' + w + 'Try Again')
      	print()
-     	hydra()     	
+     	hydra() 
      	
 
 def sql():
