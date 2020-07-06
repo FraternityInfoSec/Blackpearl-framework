@@ -161,7 +161,6 @@ ban7 = """\x1b[00m
 `-----------------------------'""" 
 
 ban8 = """\x1b[91m
-
 ==========
 =      ===
 =  ===  ==
@@ -172,7 +171,15 @@ ban8 = """\x1b[91m
 =  ====  =
 =  ===  ==
 =      ===
-=========="""
+========== 
+==========  
+MM"""""""`YM 
+MM  mmmmm  M 
+M'        .M 
+MM  MMMMMMMM FFFF RRR  W   w   W RRR  K k
+MM  MMMMMMMM F    R R   W  w  W  R R  Kk
+MM  MMMMMMMM FFF  RR     W w W   RR   Kk
+MMMMMMMMMMMM F    R  R    WwW    R  R K k"""
 
 def randomlogo():
         listlogo = [ban1,ban2,ban3,ban4,ban5,ban6,ban7,ban8]
