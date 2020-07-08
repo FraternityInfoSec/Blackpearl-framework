@@ -585,6 +585,8 @@ def sql():
 	 print("6.Get data from  table")
 	 print("7.WAF bypass")
 	 print()
+	 global r
+	 global w
 	 j = input(w + 'pearl(' + r +'sqlmap' + w + ') > ')
 	 if j == '1':
 	 	os.system("cd /data/data/com.termux/files/home && git clone https://github.com/sqlmapproject/sqlmap.git")
@@ -636,7 +638,7 @@ def sql():
 	 else:
 	 	print(r + '[!]' + w + 'Invalid Input')
 	 	print(r + '[!]' + w + 'Try Again')
-	 	sql() 
+	 	sql()
 
 	 	 
 	
@@ -648,6 +650,8 @@ def info():
 	print("4.Host DNS finder")
 	print("5.Reverse IP looker")
 	print("6.Traceroute")
+	global r
+	global w
 	i = input(w + 'pearl(' + r + 'info' + w + ') > ')
 	if i == '1':
 		d = input('Enter IP Address : ')
