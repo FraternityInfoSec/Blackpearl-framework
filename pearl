@@ -680,7 +680,7 @@ def info():
 	elif i == '5':
 	     d = input("Enter IP : ")
 	     reverse = "http://api.hackertarget.com/reverseiplookup/?q=" + d
-	     lookup = url.open(reverse).read()
+	     lookup = urlopen(reverse).read()
 	     print(lookup)
 	     info()
 	elif i == '6':
