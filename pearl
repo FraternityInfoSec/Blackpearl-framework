@@ -345,7 +345,7 @@ def nmap():
 	i = input(w + "[pearl(" + r + 'nmap' + w + ") > ")
 	if i == '1':
 		j = input("Enter Site/IP : ")
-		os.system("nmap" + j)
+		os.system("nmap " + j)
 		nmap()
 	elif i == '2':
 		j = input("Enter Site/IP : ")
