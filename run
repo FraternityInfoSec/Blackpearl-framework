@@ -37,7 +37,7 @@ spin(){
 
     do
 
-      echo -ne "\r$i $title $i";
+      echo -ne "\r$title $i";
 
       sleep 0.1;
 
