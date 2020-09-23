@@ -641,7 +641,8 @@ def sql():
 	 	print(r + '[!]' + w + 'Invalid Input')
 	 	print(r + '[!]' + w + 'Try Again')
 	 	sql()
-	 	 
+
+		 	 
 	
 def info():
 	print()
@@ -699,7 +700,8 @@ def info():
 	else:
 		print(r + '[!]' + w + 'Invalid Input')
 		print(r + '[!]' + w + 'Try Again')
-		info()			
+		info()	
+		
 def mainmenu():
 	randomlogo()
 	sprint(banner)
@@ -727,7 +729,52 @@ def main():
   	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/module;python2 Ddos.py")
   	 elif i == 'help':
   	 	print("This is an automater for various main exploiting frameworks and scanning frameworks. \n Use : \n msf - To open metasploit framework automater \n hydra - To open hydra bruteforce automater \n sql - To open sqlmap website penetration automater \n ddos - To open powerful DDOS automater \n info - To open information gathering automater \n nmap - To open network mapper automater \n wl - To open custom wordlist maker \n exit - To exit from pearl console \n update - To update this this framework \n about - To know more about us \n")
+  	 	main()def main():
+  	 i = input(w + "[pearl~> ")
+  	 if i == 'msf':
+  	 	print("Opening Metasploit Automater")
+  	 	msf()
+  	 elif i == 'nmap':
+  	 	print("Opening Network Mapper Automater")
+  	 	time.sleep(2)
+  	 	nmap()
+  	 elif i == 'hydra':
+  	 	print("Opening Hydra Automater")
+  	 	hydra()
+  	 elif i == 'wl':
+  	 	print("Opening Wordlist Automater")
+  	 	time.sleep(2)
+  	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/module;bash wl.sh")
+  	 elif i == 'ddos':
+  	 	print("Opening DDOS Automater")
+  	 	time.sleep(2)
+  	 	ddos()
+  	 elif i == 'xss':
+  	 	print("Opening XSStrike Automater")
+  	 	time.sleep(2)
+  	 	xss()
+  	 elif i == 'help':
+  	 	print("This is an automater for various main exploiting frameworks and scanning frameworks. \n Use : \n msf - To open metasploit framework automater \n hydra - To open hydra bruteforce automater \n sql - To open sqlmap website penetration automater \n ddos - To open powerful DDOS automater \n info - To open information gathering automater \n nmap - To open network mapper automater \n wl - To open custom wordlist maker \n exit - To exit from pearl console \n update - To update this this framework \n about - To know more about us \n")
   	 	main()
+  	 elif i == 'exit':
+ 	  	sys.exit(1)
+  	 elif i == 'about':
+  	 	delay_print("This is just a project from the Fraternity.This is made for penetration testing in termux. This is only for educational purposes only. We are not responsible for any illegal activities.For any issues or errors contact us on our email Cipherweb777@gmail.com. Use 'help' command to get any help in using this project") 
+  	 	main() 
+  	 elif i == 'clear':
+  	 	main()
+  	 elif i == 'update':
+  	 	os.system("cd /data/data/com.termux/files/home/Blackpearl-framework/module;python update.py")
+  	 elif i == 'sql':
+  	 	print("Opening Sqlmap Automater")
+  	 	sql()
+  	 elif i == 'info':
+  	 	info()
+  	 else:
+  	 	print(r + '[!]' + w + 'Invalid Input')
+  	 	main()
+  	 	
+main(
   	 elif i == 'exit':
  	  	sys.exit(1)
   	 elif i == 'about':
