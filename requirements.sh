@@ -9,6 +9,7 @@ pkg install git
 pkg install python2
 pkg install toilet
 pkg install figlet
+pkg install espeak
 sleep 2
 pkg upgrade
 pkg update
