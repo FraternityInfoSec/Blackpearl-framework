@@ -7,7 +7,7 @@ w= '\x1b[00m'
 r= '\x1b[91m'
 F = '\033[91m'
 G = '\033[92m'
-os.system("run")
+
 os.system("clear")
 def delay_print(s):
     for c in s:
@@ -146,8 +146,122 @@ ban8 = """\x1b[91m
   _/_/_/    _/_/_/    _/_/_/_/_/  _/_/_/       
  _/    _/  _/                    _/            
 _/_/_/    _/                    _/"""           
-                                               
-                                               
+ 
+	
+print("Checking Internet Connection")
+time.sleep(1.5)
+os.system("clear")
+try:
+	r = requests.get('https://google.com')
+	print("[✅] Got Connection")
+except (requests.ConnectionError, requests.Timeout) as exception:
+	print("No internet connection.")
+	sys.exit(1)
+print("Checking Dependencies........")
+time.sleep(1.5)
+print()
+os.system("pkg install wget > /dev/null 2>&1")
+os.system("pkg install git > /dev/null 2>&1")
+print()
+if os.path.isdir('sqlmap'):
+        print("[✔️]Sqlmap Found ")
+        print()
+else:
+        print("[❌] Sqlmap Not Found ")
+        print()
+        time.sleep(1)
+        print("Installing Sqlmap..")
+        os.system("cd /$HOME;git clone https://github.com/sqlmapproject/sqlmap.git")
+        print("[✔️] Sqlmap Installed ")
+        print()
+if os.path.exists('/data/data/com.termux/files/usr/bin/hydra'):
+        print("[✔️] Hydra Found")
+        print()
+else:
+        print("[❌] Hydra Not Found ")
+        print()
+        time.sleep(1)
+        print("Installing Hydra..")
+        os.system("pkg install hydra > /dev/null 2>&1")
+        print("[✔️] Hydra Installed ")
+        print()
+        time.sleep(1)
+if os.path.exists("/data/data/com.termux/files/usr/bin/nmap"):
+        print("[✔️] Nmap Found ")
+        print()
+else:
+        print("[❌] Nmap Not Found ")
+        print()
+        time.sleep(1)
+        print("Installing Nmap..")
+        os.system("pkg install nmap > /dev/null 2>&1")
+        print("[✔️] Nmap Installed ")
+        print()
+if os.path.exists("/data/data/com.termux/files/usr/bin/msfconsole"):
+        print("[✔️] Metasploit Framework Found ")
+        print()
+else:
+        print("[❌] Metasploit Framework Not Found ")
+        print()
+        time.sleep(1)
+        print("Installing Metasploit Framework..")
+        os.system("pkg install unstable-repo;pkg install metasploit")
+        print("[✔️] Metasploit Framework Installed ")
+        print()
+        time.sleep(1)
+if os.path.isdir('XSStrike'):
+        print("[✔️] XSStrike Found ")
+        print()
+else:
+        print("[❌] XSStrike Not Found ")
+        print()
+        time.sleep(1)
+        print("Installing XSStrike...")
+        os.system("cd $HOME;git clone https://github.com/s0md3v/XSStrike.git")
+        print("[✔️] XSStrike Installed ")
+        print()
+        time.sleep(1)
+print()
+print()
+print("Dependencies Checked")
+time.sleep(2)
+os.system("clear")
+print("[..............................................]")
+time.sleep(1)
+os.system("clear")
+print("[#.............................................]")
+time.sleep(0.5)
+os.system("clear")
+print("[##............................................]")
+time.sleep(0.5)
+os.system("clear")
+print("[###########...................................]")
+time.sleep(0.25)
+os.system("clear")
+print("[##############................................]")
+time.sleep(0.5)
+os.system("clear")
+print("[#################.............................]")
+time.sleep(1)
+os.system("clear")
+print("[####################..........................]")
+time.sleep(0.3)
+os.system("clear")
+print("[#########################.....................]")
+time.sleep(0.2)
+os.system("clear")
+print("[##############################................]")
+time.sleep(1)
+os.system("clear")
+print("[####################################..........]")
+time.sleep(0.4)
+os.system("clear")
+print("[##########################################....]")
+time.sleep(1.5)
+os.system("clear")
+print("[##############################################]")
+time.sleep(0.5)
+os.system("clear")                                               
 
 def randomlogo():
         listlogo = [ban1,ban2,ban3,ban4,ban5,ban6,ban7,ban8]
