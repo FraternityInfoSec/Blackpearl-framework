@@ -3,6 +3,7 @@ import os,sys
 import time
 import random
 from urllib.request import urlopen
+import requests
 w= '\x1b[00m'
 r= '\x1b[91m'
 F = '\033[91m'
