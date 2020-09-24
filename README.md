@@ -17,19 +17,21 @@ HOW TO INSTALL :
 
 1.pkg update && upgrade 
 
-2.git clone https://github.com/ProfessorCipher/Blackpearl-framework.git 
+2.git clone https://github.com/FraternityInfoSec/Blackpearl-framework.git
 
 3.bash install requirements.sh
 
 4.python install.py
 
+
+<h3>OR</h3>
+<p><h5>pip install pearl</h5>
+
 Now Clear session and open new terminal and just type pearl and enter.
 
 # IMPORTANT COMMANDS
 
-Type below commands in Blackpearl-framework console :
-
-update : For any new updations 
+Type below commands in Blackpearl-framework console : 
 
 help   : For any help of using framework 
 
