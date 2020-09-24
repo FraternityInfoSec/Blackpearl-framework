@@ -3,7 +3,7 @@ import os
 import time
 print
 os.system("chmod +x *")
-os.system("cd ~/Blackpearl-framework;bash runinstall.sh")
+
 os.system("cp -r ~/Blackpearl-framework/pass1.txt $HOME")
 os.system("cp -r ~/Blackpearl-framework/pass2.txt $HOME")
 os.system("cp -r ~/Blackpearl-framework/pass3.txt $HOME")
