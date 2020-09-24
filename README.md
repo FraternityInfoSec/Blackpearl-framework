@@ -9,7 +9,7 @@ THE BLACKPEARL-FRAMEWORK
 
 <h5>Currently This Framework Is Available For Termux. Under Construction For Kali Linux</h5> 
 
-<img src="https://github.com/ProfessorCipher/Blackpearl-framework/blob/master/image.jpg">
+<img src="https://github.com/FraternityInfoSec/Blackpearl-framework/blob/master/Photo_1600701452267.jpg">
 
 # INSTALLATION 
 
