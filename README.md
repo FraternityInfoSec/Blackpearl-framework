@@ -21,7 +21,7 @@ HOW TO INSTALL :
 
 3.bash install requirements.sh
 
-4.python install.py
+
 
 
 <h3>OR</h3>
