@@ -1,7 +1,5 @@
 clear
-echo "Fixing environments issues" 
-echo
-dpkg --configure -a
+
 echo
 echo "Press 'y' and enter if any permission asks for downloading resources"
 echo
