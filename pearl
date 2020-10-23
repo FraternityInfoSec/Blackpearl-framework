@@ -220,7 +220,7 @@ else:
         print()
         time.sleep(1)
         print("Installing Metasploit Framework..")
-        os.system("pkg install unstable-repo;pkg install metasploit > /dev/null 2>&1")
+        os.system("pkg install unstable-repo;pkg install metasploit")
         print("[✔️] Metasploit Framework Installed ")
         print()
         time.sleep(1)
