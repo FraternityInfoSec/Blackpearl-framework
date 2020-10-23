@@ -28,9 +28,9 @@ cp -r pearl /data/data/com.termux/files/usr/bin/
 chmod +x /data/data/com.termux/files/usr/bin/pearl
 
 
-pip install pytube > /dev/null 2>&1
+pip install pytube 
 
-pip install requests > /dev/null 2>&1
+pip install requests 
 echo
 echo "Requirements Satisfied"
 cd
