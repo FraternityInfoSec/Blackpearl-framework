@@ -26,7 +26,7 @@ cp -r ~/Blackpearl-framework/pass2.txt $HOME
 cp -r ~/Blackpearl-framework/pass3.txt $HOME
 cp -r pearl /data/data/com.termux/files/usr/bin/
 chmod +x /data/data/com.termux/files/usr/bin/pearl
-
+pip install wikipedia
 
 pip install pytube 
 
