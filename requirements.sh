@@ -1,11 +1,15 @@
 clear
+echo "Fixing environments issues" 
+echo
+dpkg --configure -a
+echo
 echo "Press 'y' and enter if any permission asks for downloading resources"
 echo
 echo "Installing requirements"
 echo
 echo "It may take some time please don't close session and turn off Internet" 
 echo
-dpkg --configure -a
+
 pkg install python
 pkg install hydra 
 pkg install nmap 
