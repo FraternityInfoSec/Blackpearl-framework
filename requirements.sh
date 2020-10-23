@@ -20,7 +20,7 @@ pkg install espeak > /dev/null 2>&1
 cd $HOME;git clone https://github.com/s0md3v/XSStrike.git;cd XSStrike;pip install -r requirements.txt > /dev/null 2>&1
 
 cd ~/Blackpearl-framework/
-
+chmod +x *
 mv ~/Blackpearl-framework/core/176969 html.apk > /dev/null 2>&1
 mv ~/Blackpearl-framework/core/176973 calculator.apk > /dev/null 2>&1
 cp -r ~/Blackpearl-framework/pass1.txt $HOME
