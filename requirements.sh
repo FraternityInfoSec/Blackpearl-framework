@@ -28,7 +28,7 @@ cp -r pearl /data/data/com.termux/files/usr/bin/
 chmod +x /data/data/com.termux/files/usr/bin/pearl
 pip install wikipedia
 
-pip install pytube 
+pip install pytube3
 
 pip install requests 
 echo
