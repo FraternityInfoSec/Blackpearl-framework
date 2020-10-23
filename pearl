@@ -246,7 +246,7 @@ else:
         print("Installing Apkmod")
         print("[ It may take long time ]")
         print
-        os.system("cd /$HOME;Get the setup script wget https://raw.githubusercontent.com/Hax4us/Apkmod/master/setup.sh;sh setup.sh > /dev/null 2>&1")
+        os.system("cd /$HOME;wget https://raw.githubusercontent.com/Hax4us/Apkmod/master/setup.sh;sh setup.sh > /dev/null 2>&1")
         print("[✔️] Apkmod  Installed ")
         print()
 if os.path.isdir('hulk'):
