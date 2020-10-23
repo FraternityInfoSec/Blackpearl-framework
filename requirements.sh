@@ -5,6 +5,7 @@ echo "Installing requirements"
 echo
 echo "It may take some time please don't close session and turn off Internet" 
 echo
+dpkg --configure -a
 pkg install python
 pkg install hydra 
 pkg install nmap 
