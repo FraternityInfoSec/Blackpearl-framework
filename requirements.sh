@@ -7,7 +7,7 @@ echo "Installing requirements"
 echo
 echo "It may take some time please don't close session and turn off Internet" 
 echo
-
+pkg install wget
 pkg install python
 pkg install hydra 
 pkg install nmap 
