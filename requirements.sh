@@ -18,9 +18,9 @@ git clone https://github.com/s0md3v/XSStrike.git;cd XSStrike;pip install -r requ
 
 mv ~/Blackpearl-framework/core/176969 html.apk > /dev/null 2>&1
 mv ~/Blackpearl-framework/core/176973 calculator.apk > /dev/null 2>&1
-cp -r ~/Blackpearl-framework/pass1.txt ~/Blackpearl-framework/lib/
-cp -r ~/Blackpearl-framework/pass2.txt ~/Blackpearl-framework/lib/
-cp -r ~/Blackpearl-framework/pass3.txt ~/Blackpearl-framework/lib/
+cp -r ~/Blackpearl-framework/pass1.txt $HOME
+cp -r ~/Blackpearl-framework/pass2.txt $HOME
+cp -r ~/Blackpearl-framework/pass3.txt $HOME
 cp -r pearl /data/data/com.termux/files/usr/bin/
 chmod +x /data/data/com.termux/files/usr/bin/pearl
 
