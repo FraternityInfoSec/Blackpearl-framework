@@ -33,5 +33,5 @@ pip install pytube3
 pip install requests 
 echo
 echo "Requirements Satisfied"
-cd
+cd $HOME
 
