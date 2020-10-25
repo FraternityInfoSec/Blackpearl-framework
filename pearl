@@ -220,7 +220,7 @@ else:
         print()
         time.sleep(1)
         print("Installing Metasploit Framework..")
-        os.system("pkg install unstable-repo;pkg install metasploit > /dev/null 2>&1")
+        os.system("pkg install unstable-repo;pkg install metasploit")
         print("[✔️] Metasploit Framework Installed ")
         print()
         time.sleep(1)
@@ -246,7 +246,7 @@ else:
         print("Installing Apkmod")
         print("[ It may take long time ]")
         print
-        os.system("cd /$HOME;Get the setup script wget https://raw.githubusercontent.com/Hax4us/Apkmod/master/setup.sh;sh setup.sh > /dev/null 2>&1")
+        os.system("cd /$HOME;Get the setup script wget https://raw.githubusercontent.com/Hax4us/Apkmod/master/setup.sh;sh setup.sh")
         print("[✔️] Apkmod  Installed ")
         print()
 if os.path.isdir('hulk'):
