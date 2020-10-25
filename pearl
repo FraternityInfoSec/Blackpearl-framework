@@ -1438,13 +1438,23 @@ def chat():
 	print()
 	print("1. Starter \n2. Client")
 	print()
-	chat = input("[pearl(chat) >  ")
-	if chat == '1':
+	cht = input("[pearl(echo) >  ")
+	if cht == '1':
 		os.system("clear")
-		print(""" """)
-		print("Note : Starter should send the message first after connected")
+		print("""\x1b[91m
+		
+ _______  _______  __   __  _______ 
+|       ||       ||  | |  ||       |
+|    ___||       ||  |_|  ||   _   |
+|   |___ |       ||       ||  | |  |
+|    ___||      _||       ||  |_|  |
+|   |___ |     |_ |   _   ||       |
+|_______||_______||__| |__||_______|
+
+		  """)
+		print("\x1b[00mNote : Starter should send the message first after connected")
 		print()
-		ip = input("Your IP : ")
+		ip = input("\x1b[00mYour IP : ")
 		port = 5555
 		s = socket.socket()
 		s.bind((ip, port))
@@ -1464,14 +1474,29 @@ def chat():
 				main()
 			elif msg == 'back':
 				chat()
-	elif chat == '2':
+			else:
+				print("[!] Invalid Input")
+				print("[!] Try Again")
+				time.sleep(1)
+				chat()	
+	elif cht == '2':
 		os.system("clear")
-		print(""" """)
+		print("""\x1b[91m
+		
+ _______  _______  __   __  _______ 
+|       ||       ||  | |  ||       |
+|    ___||       ||  |_|  ||   _   |
+|   |___ |       ||       ||  | |  |
+|    ___||      _||       ||  |_|  |
+|   |___ |     |_ |   _   ||       |
+|_______||_______||__| |__||_______|
+
+		""")
 		print()
-		print("Note : Starter should send the message first after connected")
+		print("\x1b[00mNote : Starter should send the message first after connected")
 		print()
 		s = socket.socket()
-		ip = input("Starter IP : ")
+		ip = input("\x1b[00mStarter IP : ")
 		port = 5555
 		s.connect((ip, port))
 		print("Connection Established")
@@ -1490,6 +1515,17 @@ def chat():
 				main()
 			elif msg == 'back':
 				chat()
+			else:
+				print("[!] Invalid Input")
+				print("[!] Try Again")
+				time.sleep(1)
+				chat()				
+	else:
+		print("[!] Invalid Input")
+		print("[!] Try Again")
+		time.sleep(1)
+		chat()
+
 
 def update():
 	print("Checking For New Release")
