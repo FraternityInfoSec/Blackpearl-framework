@@ -14,7 +14,7 @@ pkg install nmap
 pkg install git 
 pkg install python2 
 
-pkg install espeak > /dev/null 2>&1
+pkg install espeak
 cd $HOME;git clone https://github.com/s0md3v/XSStrike.git;cd XSStrike;pip install -r requirements.txt > /dev/null 2>&1
 
 cd ~/Blackpearl-framework/
