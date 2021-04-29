@@ -10,7 +10,7 @@ THE BLACKPEARL-FRAMEWORK
 <a href="https://blackpearlframework.weebly.com/">Blackpearl-framework</a></p>
 <H4 align="center">This is a framework for using most of best hacking tools to work without having an need of commands.</H4> 
 
-<h5>Currently This Framework Is Available For Termux. Under Construction For Kali Linux</h5> 
+<h5>Currently This Framework Is Available For Termux. Under Development For Kali Linux</h5> 
 
 <img src="https://github.com/FraternityInfoSec/Blackpearl-framework/blob/master/Photo_1601990491883.png">
 
